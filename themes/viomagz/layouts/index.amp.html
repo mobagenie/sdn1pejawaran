@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        {{ partial "head-amp.html" . }}
+        {{ partial "amp-css.min.html" . }}
+
+        {{ partial "ampcomp.html" . }}
+
+        {{ partial "head.html" . }}
+
+    </head>
+    <body>
+
+		{{ partial "nav-amp.html" . }}
+		{{ partial "header-amp.html" . }}
+
+
+		{{ partial "post-grid-index-amp" . }}
+
+		{{ partial "post-grid-index" . }}
+
+
+		{{ partial "sidebar-wrapper-start.html" . }}
+
+		 {{ partial "editor-pick-amp.html" . }} 
+		 {{ partial "game-chart.html" . }}
+		 {{ partial "esports-chart.html" . }}
+		 
+		<!-- {{ partial "trending-topic.html" . }} -->
+
+		{{ partial "category-amp.html" . }}
+        
+        {{ partial "sidebar-widget-amp.html" . }}
+
+		{{ partial "sidebar-wrapper-end.html" . }}
+
+		{{ partial "footer-amp.html" . }}
+		{{ partial "js-init-amp.html" . }}
+		
+		{{ partial "category.html" . }}
+        
+        {{ partial "sidebar-widget.html" . }}
+
+		{{ partial "sidebar-wrapper-end.html" . }}
+
+		{{ partial "footer.html" . }}
+		{{ partial "js-init.html" . }}
+
+    </body>
+</html>

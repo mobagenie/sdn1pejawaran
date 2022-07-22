@@ -1,0 +1,627 @@
+---
+title: "GENIEup MLBB WEEKLY BATTLE - WEEK #5"
+post_highlight: "pppp"
+author: MobaGenie
+date: 2021-01-30T13:23:09+07:00
+PublishDate: 2021-01-30T13:23:09+07:00
+Lastmod: 2021-01-30T13:23:09+07:00
+slug: genieup-mlbb-weekly-battle-week-5
+Breadcrumb: [WEEKLY BATTLE]
+tags: []
+images: ['http://mobagenie.my.id/img/info-logo.jpg']
+draft: false
+layout: "genieuporganizer-single-page"
+type: section
+---
+
+
+<!-- <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script> -->
+<link rel="stylesheet" type="text/css" href="/bracket/site/jquery.bracket.min.css"  crossorigin="anonymous"/>
+
+
+<!-- <link rel="stylesheet" type="text/css" href="http://www.aropupu.fi/bracket/site/jquery-ui-1.8.16/css/ui-lightness/jquery-ui-1.8.16.custom.css" /> -->
+<!-- <link rel="stylesheet" type="text/css" href="http://www.aropupu.fi/bracket/site/jquery.bracket-site.css" /> -->
+
+<style type="text/css" rel="stylesheet">
+
+.matchMargin{width: 90px;}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.25;
+}
+
+table {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  table-layout: fixed;
+}
+
+table caption {
+  font-size: 1.5em;
+  margin: .5em 0 .75em;
+}
+
+table tr {
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: .35em;
+}
+
+table th,
+table td {
+  padding: .625em;
+  text-align: center;
+}
+
+table th {
+  font-size: .85em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 600px) {
+  table {
+    border: 0;
+  }
+
+  table caption {
+    font-size: 1.3em;
+  }
+  
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  
+  table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: .625em;
+  }
+  
+  table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: .8em;
+    text-align: right;
+  }
+  
+  table td::before {
+    /*
+    * aria-label has no advantage, it won't be read inside a table
+    content: attr(aria-label);
+    */
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  table td:last-child {
+    border-bottom: 0;
+  }
+}
+</style>
+
+
+	
+<script type="text/javascript">
+
+// Tournament config
+var weekConf = "";
+var dateConf = "";
+var timeConf = "";
+
+$(document).ready(function(){
+    <!-- var demos = ['save', 'minimal', 'resize', 'matches', 'customHandlers', 'autoComplete', 'doubleElimination', 'noSecondaryFinal', 'noConsolationRound', 'noGrandFinalComeback', 'reverseBracket', 'big', 'connectorStyles'] -->
+    var demos = ['minimal']	
+    $.each(demos, function(i, d){
+      var demo = $('div#'+d)
+      $('<div class="demo"></div>').appendTo(demo)
+      <!-- var pre = $('<pre name="code" class="js"></pre>').appendTo(demo) -->
+      <!-- var script = demo.find('script') -->
+      <!-- demo.find("h3").append($('<a href="#' + d + '">¶</a>')) -->
+      <!-- pre.text(script.html()) -->
+    })
+  })
+</script>
+<script type="text/javascript" src="/bracket/site/jquery.json-2.2.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha256-KXn5puMvxCw+dAYznun+drMdG1IFl3agK0p/pqT9KAo= sha512-2e8qq0ETcfWRI4HJBzQiA3UoyFk6tbNyG+qSaIBZLyW9Xf3sWZHN/lxe9fTh1U45DpPf07yj94KsUHHWe4Yk1A==" crossorigin="anonymous"></script>
+  <script src="https://mobagenie-eb6a.restdb.io/assets/js/jquery-serialize-object.min.js"></script>
+  <script src="https://mobagenie-eb6a.restdb.io/assets/js/jquery.datetimepicker.full.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.5.1/lodash.min.js"></script>
+  
+<script type="text/javascript" src="http://www.aropupu.fi/bracket/site/jquery-ui-1.8.16/jquery-ui-1.8.16.custom.min.js"></script>
+<script type="text/javascript" src="/bracket/site/jquery.json-2.2.min.js"></script>
+<script type="text/javascript" src="http://www.aropupu.fi/bracket/site/syntaxhighlighter_3.0.83/scripts/shCore.js"></script>
+<script type="text/javascript" src="http://www.aropupu.fi/bracket/site/syntaxhighlighter_3.0.83/scripts/shBrushJScript.js"></script>
+<script type="text/javascript" src="http://www.aropupu.fi/bracket/site/syntaxhighlighter_3.0.83/scripts/shBrushXml.js"></script>
+
+<div class="separator" style="clear: both; text-align: center;"><a href="https://lh3.googleusercontent.com/-G9tKkvgEEVc/YNb4CW_qAAI/AAAAAAAAB2o/1fJS84HOpc4mJy0IJbO2ZaQ-98zwEZw2QCLcBGAsYHQ/s1080/IMG_ORG_1624700903338.jpeg" imageanchor="1"><img border="0" src="https://lh3.googleusercontent.com/-G9tKkvgEEVc/YNb4CW_qAAI/AAAAAAAAB2o/1fJS84HOpc4mJy0IJbO2ZaQ-98zwEZw2QCLcBGAsYHQ/s1080/IMG_ORG_1624700903338.jpeg" alt="" width="1080" height="642" data-original-width="1080" data-original-height="642"></a></div><br>
+
+<br/>
+	
+<!-- <iframe src="https://battlefy.com/embeds/60ce195f21762b468d3da6f1/stage/60cef24362b8ae2a2cade705" title="Battlefy Tournament - W4, SE" width="100%" height="500" scrolling="yes" frameborder="0"></iframe> -->
+
+<script>
+	$.fn.GetParamURL = function(name){
+    var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
+    if (results==null) {
+       return null;
+    }
+    return decodeURI(results[1]) || 0;
+}
+
+var bracket  = $().GetParamURL('bracket');
+var team  = $().GetParamURL('team');
+
+<!-- if (bracket == 'on') { -->
+<!-- document.write(''); -->
+
+<!-- document.write('<br/><b><a href="/genieuporganizer/genieup-mlbb-weekly-battle-week-4/"> [ HIDE BRACKET ] </a></b>'); -->
+
+<!-- }else{ -->
+<!-- document.write('<b><a href="/genieuporganizer/genieup-mlbb-weekly-battle-week-4/?bracket=on"> [ SHOW BRACKET ] </a></b>'); -->
+<!-- } -->
+
+/*
+if (team == 'on') {
+document.write('');
+
+document.write('<br/><br/><b><a href="/genieuporganizer/genieup-mlbb-weekly-battle-week-4/"> [ HIDE TEAM ] </a></b>');
+
+}else{
+document.write('<br/><br/><b><a href="/genieuporganizer/genieup-mlbb-weekly-battle-week-4/?team=on">[ SHOW TEAM ]</a></b>');
+}
+
+*/
+
+
+$(document).ready(function(){
+ 
+   $.ajax({
+            url: "https://timezone.abstractapi.com/v1/current_time/?api_key=1b6585fe8ab14d9cbdf245ec877f9d15&location=Jakarta,%20Indonesia",
+            type: 'GET',
+            dataType: 'json',
+            success: function(json) {
+               
+			   
+				var abstractapi = (json.datetime); //"2021-06-22 13:05:09"; JSON.stringify()
+
+				var arr1 = abstractapi.split('-');
+				var arr2 = abstractapi.split(' ');
+				
+				var years = arr1[0];
+				var month = arr1[1];
+				var daysunfix = arr1[2]; //
+				var days = daysunfix.substring(0, 2);//get first 5 chars
+				var time = arr2[1];
+				
+				<!-- console.log('date: ', arr1[0]); -->
+				<!-- console.log('month: ', arr2[0]); -->
+				<!-- console.log('year: ', arr2[1]); -->
+
+var dtapi =  '' + month + '/' + days + '/' + years + ' ' + time + '';
+var dateapi =  '' + month + '/' + days + '/' + years + '';
+var timeapi =  '' + time + '';
+
+document.getElementById("ServerDate").innerHTML = " " +dateapi+ " ";
+document.getElementById("ServerTime").innerHTML = " " +timeapi+ " ";
+
+// Set the date we're counting down to
+var countDownDate = new Date("06/26/2021 19:00").getTime(); //new Date("06/26/2021 19:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  <!-- var now = new Date().getTime(); -->
+  var now = new Date(dtapi).getTime();
+   <!-- alert(now); -->
+   
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("demo").innerHTML = "" + days + "days " + hours + "hours "
+  + minutes + "minutes " + seconds + "seconds ";
+
+  // If the count down is finished, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "This Tournament has been started!";
+	<!-- document.getElementById("disqus_thread_warning").innerHTML = "This Tournament has been started!"; -->
+	<!-- document.getElementById('disqus_thread').style.display = 'none'; -->
+  }
+}, 1000);
+
+
+<!-- var dateapi =  '06/30/2021'; -->
+<!-- var timeapi =  '19:00:00'; -->
+
+  // If the count down is finished, write some text 
+  if (dateapi == "07/03/2021") {
+  
+		  if (timeapi.includes("19:")  ||  timeapi.includes("20:")  ||  timeapi.includes("21:")  ||  timeapi.includes("22:")  || timeapi.includes("23:") ) {
+			<!-- alert("The word 19: is in the string."); -->
+			
+	<!-- document.getElementById("disqus_thread_warning").innerHTML = "Comment open when tournament started!!"; -->
+	<!-- document.getElementById('disqus_thread').style.display = 'show'; -->
+	document.getElementById('disqus_thread_warning').style.display = 'none';
+	
+		} else {
+			<!-- alert("The word Example is not in the string."); -->
+			document.getElementById("disqus_thread_warning").innerHTML = "Comment open at 07/03/2021, 19.00.00 - 23.00.00!!";
+			document.getElementById('disqus_thread').style.display = 'none';
+		}
+  
+
+  }else{
+  
+  document.getElementById("disqus_thread_warning").innerHTML = "Comment open at 07/03/2021, 19.00.00 - 23.00.00!!";
+  	document.getElementById('disqus_thread').style.display = 'none';
+  
+  };				
+				
+				<!-- $('#result').html(now) -->
+
+            }
+        });
+
+})
+
+/*
+    CountDownTimer('06-26-2021 13:05:09', 'countdown');
+	<!-- CountDownTimer('06/22/2021 01:06 AM', 'countdown'); -->
+    <!-- CountDownTimer('06/26/2021 07:00 PM', 'newcountdown'); -->
+
+    function CountDownTimer(dtapi,dt, id)
+    {
+        var end = new Date(dt);
+
+        var _second = 1000;
+        var _minute = _second * 60;
+        var _hour = _minute * 60;
+        var _day = _hour * 24;
+        var timer;
+
+        function showRemaining() {
+            <!-- var now = new Date(); -->
+			var now = new Date(dtapi);
+            var distance = end - now;
+            if (distance < 0) {
+
+                clearInterval(timer);
+                document.getElementById(id).innerHTML = 'Tournament Started in : Tournament/Scrim has been Started!';
+
+                return;
+            }
+            var days = Math.floor(distance / _day);
+            var hours = Math.floor((distance % _day) / _hour);
+            var minutes = Math.floor((distance % _hour) / _minute);
+            var seconds = Math.floor((distance % _minute) / _second);
+
+            document.getElementById(id).innerHTML = 'Tournament Started in : ' + days + ' days ';
+            document.getElementById(id).innerHTML += hours + ' hours ';
+            document.getElementById(id).innerHTML += minutes + ' minutes ';
+            document.getElementById(id).innerHTML += seconds + ' seconds';
+        }
+
+        timer = setInterval(showRemaining, 1000);
+    }
+	
+	*/
+
+$(document).ready(function(){
+	$("#team").hide();
+	$("#hide").hide();
+	
+  $("#show").click(function(){
+    $("#team").show();
+    $("#show").hide();
+  
+  $("#hide").show();
+  
+    $("#hide").click(function(){
+    $("#team").hide();
+    $("#show").show();
+    $("#hide").hide();
+
+  });
+  
+  
+  });
+  
+
+  
+});
+
+$(document).ready(function(){
+		var jsondb = $.parseJSON($.ajax({
+		  "async": false,
+		  "crossDomain": true,
+		  "url": "http://localhost:1313/bracket/test.json",
+		  "method": "GET",
+		  "headers": {
+			"content-type": "application/json",
+			"x-apikey": "60d21140e2c96c46a2463829",
+			"cache-control": "no-cache"}
+			
+		<!-- var datadb = JSON.stringify(response); -->
+
+		}).responseText);
+
+<!-- var saveData = {"teams":[["TEAM 1","TEAM 2"]],"results":[[[[0,0,"Match 1"]]]]} -->
+
+var saveData = 	jsondb[0].jsondb;
+var data = saveData.teams;	
+;			
+<!-- alert(teamArr[1]); -->
+
+var arr = [];
+for(var i = 0; i < data.length; i++)
+{
+for(var i = 0; i < data[i].length; i++)
+{
+   alert(data[i]);
+   
+}
+   
+}
+
+	
+
+	
+})	
+
+<!-- $(document).ready(function(){ -->
+      <!-- $.ajax({ -->
+        <!-- "url": "http://localhost:1313/bracket/test.json", -->
+  <!-- "async": true, -->
+  <!-- "crossDomain": true, -->
+  <!-- "method": "GET", -->
+  <!-- "headers": { -->
+    <!-- "content-type": "application/json", -->
+    <!-- "x-apikey": "60d21140e2c96c46a2463829", // GET Only PUBLIC API Key -->
+    <!-- "cache-control": "no-cache" -->
+  <!-- }, -->
+        <!-- success: function(data){ -->
+		<!-- //var data = JSON.stringify(data); -->
+		<!-- //console.log(data[i].tea -->
+         <!-- for(i=0; i<data.length; i++){ -->
+		 <!-- ms); -->
+            <!-- $('#round1').append('<tr><td data-label="ROUND">1</td><td data-label="MATCH">'+data[i].MATCHNO+'</td><td data-label="VERSUS">'+data[i].VERSUS+'</td><td data-label="TIME">19.00.00</td><td data-label="LOBBY"><a href="/genieuporganizer/genieup-mlbb-weekly-battle-lobby-match-chat/?Week='+data[i].WEEK+'&Round=1&MatchNo='+data[i].MATCHNO+'&Versus='+data[i].VERSUS+'&MatchDate='+data[i].MATCHDATE+'&Time=19:00:00&MID=GMWBW'+data[i].WEEK+'R1M'+data[i].MATCHNO+'&CD='+data[i].MATCHDATE+' 07:00 PM" target="_blank">[ ENTER ]</a></b></td><td data-label="REPORT">REPORT</td></tr>'); -->
+         <!-- } -->
+       <!-- }, -->
+       <!-- error: function(data){ -->
+       <!-- alert("tidak dapat memproses"); -->
+     <!-- } -->
+    <!-- }); -->
+  <!-- }); -->
+ 
+</script>
+
+  <script type="text/javascript">
+  
+
+
+
+$(document).ready(function(){
+		var settings = {
+		  "async": false,
+		  "crossDomain": true,
+		  <!-- "url": "https://mobagenie-eb6a.restdb.io/rest/genieupbracketdb?q={%22tourid%22:%20%22gmwbw5%22}", -->
+		  	"url": "http://localhost:1313/bracket/test.json",
+		  "method": "GET",
+		  "headers": {
+			"content-type": "application/json",
+			"x-apikey": "60d21140e2c96c46a2463829",
+			"cache-control": "no-cache"
+		  }
+		}
+
+		var jsondb = $.parseJSON($.ajax({
+		  "async": false,
+		  "crossDomain": true,
+		  <!-- "url": "https://mobagenie-eb6a.restdb.io/rest/genieupbracketdb?q={%22tourid%22:%20%22gmwbw5%22}", -->
+		  	"url": "http://localhost:1313/bracket/test.json",
+		  "method": "GET",
+		  "headers": {
+			"content-type": "application/json",
+			"x-apikey": "60d21140e2c96c46a2463829",
+			"cache-control": "no-cache"}
+			
+		<!-- var datadb = JSON.stringify(response); -->
+
+		}).responseText);
+
+<!-- var saveData = {"teams":[["TEAM 1","TEAM 2"]],"results":[[[[0,0,"Match 1"]]]]} -->
+
+var saveData = 	jsondb[0].jsondb;					
+//alert(saveData);
+
+
+// These are modified by the sliders
+<!-- var resizeParameters = { -->
+  <!-- teamWidth: 60, -->
+  <!-- scoreWidth: 20, -->
+  <!-- matchMargin: 10, -->
+  <!-- roundMargin: 50, -->
+  <!-- init: minimalData -->
+<!-- }; -->
+ 
+<!-- function updateResizeDemo() { -->
+  <!-- $('#resize .demo').bracket(resizeParameters); -->
+<!-- } -->
+$(document).ready(function(){
+    $('#minimal .demo').bracket({
+      init: saveData /* data to initialize the bracket with */ })
+  })
+
+    $(function(){
+      $.ajax({
+        <!-- "url": "https://mobagenie-eb6a.restdb.io/rest/genieupbracketdb?q={%22tourid%22:%20%22gmwbw5%22}", -->
+		"url": "http://localhost:1313/bracket/test.json",
+  "async": true,
+  "crossDomain": true,
+  "method": "GET",
+  "headers": {
+    "content-type": "application/json",
+    "x-apikey": "60d21140e2c96c46a2463829",
+    "cache-control": "no-cache"
+  },
+  
+
+        success: function(data){
+		  var data = data[0].jsondb;
+		<!-- alert(data); -->
+         <!-- for (key in data){ -->
+            <!-- $('tbody').append('<tr><td>'+data[0][key]+'</td></tr>'); -->
+			<!-- } -->
+       },
+       error: function(data){
+       <!-- alert("tidak dapat memproses"); -->
+     }
+    });
+  });
+
+
+})		
+
+  </script> 
+
+
+
+<div style="overflow-x: auto;
+    width: 300px; background-color:#99999994;" id="minimal">
+
+</div>
+
+
+
+<!-- <a href="#" id="show"><br/><br/><b>[ SHOW TEAM] </b></a> -->
+<!-- <a href="#" id="hide"><br/><br/><b>[ HIDE TEAM] </b></a> -->
+
+<!-- <div id="team"></div> -->
+
+<!-- <div class="container"> -->
+<!-- <div id="result" style="color:red"></div> -->
+<!-- </div> -->
+
+
+<table>
+  <caption style="color:white;">Tournament Detail</caption>
+  <thead>
+    <tr>
+<th scope="col"><b>Tournament Date</b></th>
+<th  scope="col"><b>Server Date</b></th>
+<th  scope="col"><b>Server Time</b></th>
+<th  scope="col"><b>Tournament started in</b></th>  
+    </tr>
+  </thead>
+   <tbody >
+      <tr>
+         <td data-label="Tournament Date"><b>07/03/202</b></td><td data-label="Server Date"><b><b id="ServerDate"></b></td>
+         <td data-label="Server Time"><b><b id="ServerTime"></b></td>
+         <!-- <td><b id="ServerTime"></b></td> -->
+         <td data-label="Tournament started in"><b><b id="demo"></b></td>
+      </tr>
+   </tbody>
+</table>
+
+<br/>
+<b><a href="https://mobagenie.my.id/register">[ TOURNAMENT REGISTRATION ]</a></b> - <b><a href="https://mobagenie.my.id/genieuporganizer/mlbb-weekly-battle-lobby-match-chat-rules">[ LOBBY CHAT RULES ]</a></b> - <b><a href="https://mobagenie.my.id/genieuporganizer/genieup-mlbb-weekly-battle-rules">[ TOURNAMENT RULES ]</a></b>  
+ <br/>
+ 
+<!-- Display the countdown timer in an element -->
+<span style="color: red;"></span>
+
+<!-- <span style="color: red;"><b><div id="countdown"></div></b> -->
+<!-- <div id="newcountdown"></div-->
+<!-- </span> -->
+		
+<!-- <br/><br/><b>ROUND : 1</b><br/> -->
+
+<!-- <div class="tablesorter-scroller-table" ><table class="tablesorter tablesorter-jui tablesorter94b15a7f28e3b ui-widget ui-widget-content ui-corner-all hasFilters" role="grid"> -->
+<!-- <thead> -->
+    <!-- <tr> -->
+	 <!-- <th data-sorter="false" data-filter="false">ROUND</th> -->
+        <!-- <th data-sorter="false">MATCH NO</th> -->
+		<!-- <th data-sorter="false">VERSUS</th> -->
+        <!-- <th data-sorter="false">TIME</th> -->
+        <!-- <th data-sorter="false">LOBBY</th> -->
+        <!-- <th data-sorter="false">REPORT</th>		 -->
+    <!-- </tr> -->
+  <!-- </thead> -->
+    <!-- <tbody id="round1"></tbody> -->
+  <!-- </table> -->
+<!-- </div> -->
+
+
+<table>
+  <caption style="color:white;">Round 1</caption>
+  <thead>
+    <tr>
+      <th scope="col">ROUND</th>	
+      <th scope="col">MATCH NO</th>
+      <th scope="col">VERSUS</th>
+      <th scope="col">TIME</th>
+      <th scope="col">LOBBY</th>
+      <th scope="col">REPORT</th>	  
+    </tr>
+  </thead>
+  <tbody id="round1">
+
+  </tbody>
+</table>
+
+<br/><br/> 
+
+
+
+
+<div id="disqus_thread_warning" style="color:white;"></div>
+<div id="disqus_thread"></div>
+<script>
+	
+	var PAGE_IDENTIFIER = "GMWBW4";
+	
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    
+    var disqus_config = function () {
+//  this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable 
+    
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://genieuporganizer.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+<script id="dsq-count-scr" src="//genieuporganizer.disqus.com/count.js" async></script>
+<script type="text/javascript" src="/bracket/site/jquery.bracket.min.js" crossorigin="anonymous"></script>
+<script src="/js/stupidtable.min.js"></script>

@@ -1,0 +1,238 @@
+---
+title: "GENIEup Organizer Admin Dashboard"
+post_highlight: ""
+author: MobaGenie
+date: 2021-01-30T13:23:09+07:00
+PublishDate: 2021-01-30T13:23:09+07:00
+Lastmod: 2021-01-30T13:23:09+07:00
+slug: dashboard
+Breadcrumb: [Dashboard]
+tags: []
+images: ['http://mobagenie.my.id/img/trophy-logo.jpg']
+draft: false
+layout: "genieuporganizer-single-page"
+type: section
+---
+
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha256-KXn5puMvxCw+dAYznun+drMdG1IFl3agK0p/pqT9KAo= sha512-2e8qq0ETcfWRI4HJBzQiA3UoyFk6tbNyG+qSaIBZLyW9Xf3sWZHN/lxe9fTh1U45DpPf07yj94KsUHHWe4Yk1A==" crossorigin="anonymous"></script>
+  <script src="https://mobagenie-eb6a.restdb.io/assets/js/jquery-serialize-object.min.js"></script>
+  <script src="https://mobagenie-eb6a.restdb.io/assets/js/jquery.datetimepicker.full.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.5.1/lodash.min.js"></script>
+  
+<script type="text/javascript" src="http://www.aropupu.fi/bracket/site/jquery-ui-1.8.16/jquery-ui-1.8.16.custom.min.js"></script>
+<script type="text/javascript" src="/bracket/site/jquery.json-2.2.min.js"></script>
+<script type="text/javascript" src="http://www.aropupu.fi/bracket/site/syntaxhighlighter_3.0.83/scripts/shCore.js"></script>
+<script type="text/javascript" src="http://www.aropupu.fi/bracket/site/syntaxhighlighter_3.0.83/scripts/shBrushJScript.js"></script>
+<script type="text/javascript" src="http://www.aropupu.fi/bracket/site/syntaxhighlighter_3.0.83/scripts/shBrushXml.js"></script>
+<link rel="stylesheet" type="text/css" href="http://www.aropupu.fi/bracket/site/syntaxhighlighter_3.0.83/styles/shCoreDefault.css"/>
+<link rel="stylesheet" type="text/css" href="http://www.aropupu.fi/bracket/site/jquery-ui-1.8.16/css/ui-lightness/jquery-ui-1.8.16.custom.css" />
+<link rel="stylesheet" type="text/css" href="http://www.aropupu.fi/bracket/site/jquery.bracket-site.css" />
+
+<!-- <link rel="stylesheet" type="text/css" href="http://www.aropupu.fi/bracket/jquery-bracket/dist/jquery.bracket.min.css" /> -->
+<!-- <script type="text/javascript" src="http://www.aropupu.fi/bracket/jquery-bracket/dist/jquery.bracket.min.js"></script> -->
+
+<link rel="stylesheet" type="text/css" href="/bracket/site/jquery.bracket.min.css"  crossorigin="anonymous"/>
+<script type="text/javascript" src="/bracket/site/jquery.bracket.min.js" crossorigin="anonymous"></script>
+<script type="text/javascript">
+
+
+
+$(function() {
+    var demos = ['save', 'minimal', 'resize', 'matches', 'customHandlers', 'autoComplete', 'doubleElimination', 'noSecondaryFinal', 'noConsolationRound', 'noGrandFinalComeback', 'reverseBracket', 'big', 'connectorStyles']
+    $.each(demos, function(i, d){
+      var demo = $('div#'+d)
+      $('<div class="demo"></div>').appendTo(demo)
+      var pre = $('<pre name="code" class="js"></pre>').appendTo(demo)
+      var script = demo.find('script')
+      demo.find("h3").append($('<a href="#' + d + '">¶</a>'))
+      pre.text(script.html())
+    })
+  })
+</script>
+  
+    <meta name="google-signin-client_id" content="130621289105-kv3t97dnoupt7bv141ug8h96ftvrpvh1.apps.googleusercontent.com">
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+
+<noscript>
+
+    <!-- <style> -->
+        <!-- #protected {display:none;} -->
+    <!-- </style>	 -->
+	
+	<!-- <h2 id="nojs">This Proctected page requires JavaScript to verify your identity. Please enable JavaScript to access the Page!</h2> -->
+	
+</noscript>
+
+  <script>
+  
+document.getElementById('nojs').style.display = 'none';
+
+function onSignIn(googleUser) {
+  var profile = googleUser.getBasicProfile();
+  console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+  console.log('Name: ' + profile.getName());
+  console.log('Image URL: ' + profile.getImageUrl());
+  console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
+  
+if (profile.getEmail() == 'milengame4270@gmail.com'){
+  <!-- alert(profile.getEmail()); -->
+	<!-- document.getElementById('signedinoutbutton').style.display = 'none'; -->
+	<!-- document.getElementById('protected').style.display = 'none'; -->
+  }
+  else{
+
+location.href = "access-forbidden.html";
+
+}
+  
+}
+
+<!-- alert('jj'); -->
+
+  function signOut() {
+    var auth2 = gapi.auth2.getAuthInstance();
+    auth2.signOut().then(function () {
+      console.log('User signed out.');
+    });
+  }
+  
+$(document).ready(function(){
+		var settings = {
+		  "async": false,
+		  "crossDomain": true,
+		  "url": "https://mobagenie-eb6a.restdb.io/rest/genieupbracketdb?q={%22tourid%22:%20%22gmwbw5%22}",
+		  "method": "GET",
+		  "headers": {
+			"content-type": "application/json",
+			"x-apikey": "60d21140e2c96c46a2463829",
+			"cache-control": "no-cache"
+		  }
+		}
+
+		var jsondb = $.parseJSON($.ajax({
+		  "async": false,
+		  "crossDomain": true,
+		  "url": "https://mobagenie-eb6a.restdb.io/rest/genieupbracketdb?q={%22tourid%22:%20%22gmwbw5%22}",
+		  "method": "GET",
+		  "headers": {
+			"content-type": "application/json",
+			"x-apikey": "60d21140e2c96c46a2463829",
+			"cache-control": "no-cache"}
+			
+		<!-- var datadb = JSON.stringify(response); -->
+
+		}).responseText);
+
+var saveData = {"teams":[["TEAM 1","TEAM 2"]],"results":[[[[0,0,"Match 1"]]]]}
+
+<!-- var saveData = 	jsondb[0].jsondb;					 -->
+//alert(saveData);
+
+
+	
+  /* Called whenever bracket is modified
+   *
+   * data:     changed bracket object in format given to init
+   * userData: optional data given when bracket is created.
+   */
+  function saveFn(data, userData) {
+    var json = jQuery.toJSON(data)
+    $('#saveOutput').text('POST '+userData+' '+json)
+    /* You probably want to do something like this
+    jQuery.ajax("rest/"+userData, {contentType: 'application/json',
+                                  dataType: 'json',
+                                  type: 'post',
+                                  data: json})
+    */
+	
+	var jsd = '{"teams":[["Team 1","Team 2"]],"results":[[[[9,0]]]]}';
+			
+			var jsondata = {"tourid": "gmwbw5","tourname": "GENIEup MLBB Weekly Battle - Week #8","tourseason": "5","jsondb": json};			
+
+			var settings = {
+			  "async": true,
+			  "crossDomain": true,
+			  "url": "https://mobagenie-eb6a.restdb.io/rest/genieupbracketdb/60d8518605db02770000f412",
+			  "method": "PUT",
+			  "headers": {
+				"content-type": "application/json",
+				"x-apikey": "60d21140e2c96c46a2463829",
+				<!-- "cache-control": "no-cache" -->
+			  },
+			  "processData": false,
+			  "data": JSON.stringify(jsondata)
+			}
+
+			$.ajax(settings).done(function (response) {
+			//alert(response);
+			  console.log(response);
+			});
+	
+  }
+
+
+  $(function() {
+      var container = $('div#save .demo')
+      container.bracket({
+	   <!-- onMatchClick: onclick, -->
+	   
+        init: saveData,
+        save: saveFn,
+        userData: "http://myapi"})
+
+      /* You can also inquiry the current data */
+      var data = container.bracket('data')
+	  <!-- alert(JSON.stringify(data)); -->
+      $('#dataOutput').text(jQuery.toJSON(data))
+    })
+
+    $(function(){
+      $.ajax({
+        <!-- "url": "https://mobagenie-eb6a.restdb.io/rest/genieupbracketdb?q={%22tourid%22:%20%22gmwbw5%22}", -->
+		"url": "http://localhost:1313/bracket/test.json",
+  "async": true,
+  "crossDomain": true,
+  "method": "GET",
+  "headers": {
+    "content-type": "application/json",
+    "x-apikey": "60d21140e2c96c46a2463829",
+    "cache-control": "no-cache"
+  },
+  
+
+        success: function(data){
+		  var data = data[0].jsondb;
+		alert(data);
+         for (key in data){
+            $('tbody').append('<tr><td>'+data[0][key]+'</td></tr>');
+			}
+       },
+       error: function(data){
+       alert("tidak dapat memproses");
+     }
+    });
+  });
+
+
+})	
+  
+</script>  
+
+<div id="protected">
+ 
+<div id="save"></div>
+ 
+<h4>Save output</h4>
+<pre id="saveOutput">Try to first modify some scores or teams</pre>
+<h4>Data inquired at startup</h4>
+<pre id="dataOutput"></pre>
+ 
+ 
+<div id="signedinoutbutton" class="g-signin2" data-onsuccess="onSignIn"></div>
+  
+<a id="signoutbutton" href="#" onclick="signOut();">Sign out</a>
+
+
+</div> <!-- protected end   -->

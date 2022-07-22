@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      {{ partial "head-page.html" . }}
+        {{ partial "head-add-on-page.html" . }}	
+
+<div id="main">
+
+<div class="breadcrumbs"><span itemscope="" itemtype="">
+<a href="/" itemprop="url"><span itemprop="title">Home</span></a></span> › 
+{{ range .Params.categories }}
+<span itemscope="" itemtype=""><a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}" itemprop="url"><span itemprop="title">{{ . }}</span></a></span> › 
+{{ end }}
+</div>
+
+<div class="post-info info-3">
+  <!---- span class="author-info">
+    By  <!--span itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person">
+ <!--meta content="" itemprop="url">
+ <!--span itemprop="name">MobaGenie <!--/span>
+ <!--/span -->
+</span>
+<span class="time-info"><span class="updated published" title="{{ .Date.Format "Thuesday, Jan 2, 2006, 15:04:05 MST" }}">
+<meta content="{{ .Date.Format "Thuesday, Jan 2, 2006, 15:04:05 MST" }}" itemprop="datePublished">
+
+<img src="https://img.icons8.com/color/30/000000/approve-and-update.png" style="background-color: white; color: #777777; font-family: roboto, arial, sans-serif; font-size: 16px; text-align: center;" /> Tanggal Publikasi : {{ .PublishDate.Format "Thuesday, Jan 2, 2006, 15:04:05" }} </span>
+
+{{ if ne .Lastmod .Date }} - <b>Terahir Diubah : {{ .Lastmod.Format "Thuesday, Jan 2, 2006, 15:04:05" }} </b>{{ end }}
+</span></span>
+</div>
+
+		{{ .Content | safeHTML }}
+
+		<!--{{ partial "footer.html" . }}-->
+    </body>
+</html>

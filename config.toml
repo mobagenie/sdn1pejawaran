@@ -1,0 +1,100 @@
+title = "MobaGenie"
+# Untuk deskripsi tag meta di homepage
+description = "All about Gamming Community"
+
+baseURL = "https://mobagenie.my.id"
+
+# Agar front-matter pakai format YAML
+MetaDataFormat = "yaml"
+
+# untuk apply temanya
+themesDir = "themes"
+theme = "viomagz"
+
+#disableKinds = ["taxonomy", "taxonomyTerm"]
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+  player = "player" 
+  
+[permalinks]
+    post = "/:slug/"
+	blog = "/:slug/"
+		post-amp = "/amp/:slug/"
+		# post = "/:year/:month/:day/:slug/"
+    profile ="/profile/:slug/" 
+   
+
+# Shortname disqus, silahkan sesuaikan
+DisqusShortname = "mobagenie"
+
+# Untuk Google Analytic, silahkan sesuikan
+googleAnalytics = "UA-175505532-1" 
+
+
+
+# Biodata Author
+[author]
+    name = "Moba Genie"
+    homepage = "https://twitter.com/mobagenie"
+    bio = "noo"
+    image = "https://lh5.googleusercontent.com/-h2tLsyijw8Q/AAAAAAAAAAI/AAAAAAAACys/WBpjN_34z3o/s32-c/photo.jpg"
+	
+	
+languageCode = "en-us"
+copyright = "This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License."
+
+[outputFormats]
+[outputFormats.RSS]
+mediatype = "application/rss"
+baseName = "feed"
+
+[outputFormats.LunrIndexJson]
+  baseName = "lunrindexjson"
+  isPlainText = true
+  mediaType = "application/json"
+  notAlternative = true
+
+[params.lunrindexjson]
+  vars = ["title", "summary", "date", "publishdate", "expirydate", "permalink"]
+  params = ["categories", "tags"]
+  
+[outputs]
+  #post = [ "AMP", "HTML"]
+  home = ["HTML", "AMP", "RSS", "LunrIndexJson"]
+  page = ["HTML", "AMP"]
+  #categories = ["HTML", "AMP"]
+ # taxonomies = ["HTML", "AMP"]
+
+#ignoreErrors = ["error-output-taxonomy"]
+
+
+[markup.goldmark.renderer]
+      unsafe = true
+
+# CDN 
+[params]
+  #cdnurl = "https://cdn.statically.io/sites/mobagenie.my.id"
+   rooturl = ""
+  # rooturl = "http://localhost:1313"
+
+footerDescription1 = "MobaGenie adalah situs Media Informasi yang berfokus pada seputar Dunia Game MOBA MOBILE dan PC. dari mulai Mobile Legends, DOTA2, Arena of Valor, League of Legends, Wild Rift, Lokapala, Vainglory, dan Game MOBA lain."
+
+footerDescription2 = "Informasi yang disajikan di situs ini meliputi Update Berita, Guide, Fakta Unik, Info Pro Player, Esports, Leaderboard, Redeem Code Tools MOBA dan lain sebagainya."
+
+[build.environment]
+TZ = "Asia/Jakarta"
+
+[minify]
+  [minify.tdewolff]
+    [minify.tdewolff.html]
+    keepDocumentTags = true
+    keepQuotes = true
+	[minify.tdewolff.js]
+	KeepVarNames = true
+
+[sitemap]
+  changefreq = "weekly"
+  filename = "sitemap.xml"
+  priority = 0.5

@@ -1,0 +1,315 @@
+---
+title: "GENIEup MLBB Weekly Battle - Lobby Match Chat"
+post_highlight: ""
+author: MobaGenie
+date: 2021-01-30T13:23:09+07:00
+PublishDate: 2021-01-30T13:23:09+07:00
+Lastmod: 2021-01-30T13:23:09+07:00
+slug: genieup-mlbb-weekly-battle-lobby-match-chat
+Breadcrumb: [WEEKLY BATTLE]
+tags: []
+images: ['http://mobagenie.my.id/img/info-logo.jpg']
+draft: false
+layout: "genieuporganizer-single-page"
+type: section
+---
+<!-- <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script> -->
+<!-- <link rel="stylesheet" type="text/css" href="/bracket/site/jquery.bracket.min.css"  crossorigin="anonymous"/> -->
+
+
+<!-- <link rel="stylesheet" type="text/css" href="http://www.aropupu.fi/bracket/site/jquery-ui-1.8.16/css/ui-lightness/jquery-ui-1.8.16.custom.css" /> -->
+<!-- <link rel="stylesheet" type="text/css" href="http://www.aropupu.fi/bracket/site/jquery.bracket-site.css" /> -->
+
+
+<!-- <script type="text/javascript"> -->
+
+
+
+<!-- $(function() { -->
+    <!-- var demos = ['save', 'minimal', 'resize', 'matches', 'customHandlers', 'autoComplete', 'doubleElimination', 'noSecondaryFinal', 'noConsolationRound', 'noGrandFinalComeback', 'reverseBracket', 'big', 'connectorStyles'] -->
+    <!-- $.each(demos, function(i, d){ -->
+      <!-- var demo = $('div#'+d) -->
+      <!-- $('<div class="demo"></div>').appendTo(demo) -->
+      <!-- var pre = $('<pre name="code" class="js"></pre>').appendTo(demo) -->
+      <!-- var script = demo.find('script') -->
+      <!-- demo.find("h3").append($('<a href="#' + d + '">¶</a>')) -->
+      <!-- pre.text(script.html()) -->
+    <!-- }) -->
+  <!-- }) -->
+<!-- </script> -->
+
+<br/>
+<br/>
+
+<!-- <iframe src="https://battlefy.com/embeds/60ce195f21762b468d3da6f1/stage/60cef24362b8ae2a2cade705" title="Battlefy Tournament - W4, SE" width="100%" height="500" scrolling="yes" frameborder="0"></iframe> -->
+
+
+
+<div id="minimal"></div>
+
+<div id="matchinfo"  style="color:white;">
+<script>
+	$.fn.GetParamURL = function(name){
+    var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
+    if (results==null) {
+       return null;
+    }
+    return decodeURI(results[1]) || 0;
+}
+
+var Week  = $().GetParamURL('Week');
+var Round  = $().GetParamURL('Round');
+var MatchNo  = $().GetParamURL('MatchNo');
+var Versus  = $().GetParamURL('Versus');
+var MatchDate  = $().GetParamURL('MatchDate');
+var Time  = $().GetParamURL('Time');
+var BattlefyEmbed  = $().GetParamURL('BattlefyEmbed');
+var CD  = $().GetParamURL('CD');
+
+var MID  = $().GetParamURL('MID');
+var PAGE_URL  = '/genieuporganizer/genieup-mlbb-weekly-battle-lobby-match-chat/';
+var PAGE_IDENTIFIER  = '' + MID + '';
+<!-- document.write('' + PAGE_IDENTIFIER + ''); -->
+
+//var cidLower = cid.toLowerCase();
+
+<!-- document.write('<iframe src="' + BattlefyEmbed + '" title="Battlefy Tournament - W4, SE" width="100%" height="500" scrolling="yes" frameborder="0"></iframe><br/>'); -->
+
+var bracket  = $().GetParamURL('bracket');
+
+var URL = $(location).attr('href');      // http://www.refulz.com:8082/index.php#tab2
+
+<!-- if (bracket == 'on') { -->
+<!-- document.write('<iframe src="' + BattlefyEmbed + '" title="Battlefy Tournament - W4, SE" width="100%" height="500" scrolling="yes" frameborder="0"></iframe>'); -->
+
+<!-- function goBack() { -->
+  <!-- window.history.back(); -->
+<!-- } -->
+
+<!-- document.write('<br/><a href="#" onclick="goBack()"> [ SEMBUNYIKAN BRACKET ] </a><br/>'); -->
+
+<!-- String str = '' + URL + '';   -->
+<!-- String = str.replace("bracket=on","bracket=off"); // Replace 'h' with 's'   -->
+<!-- document.write('<br/><b><a href="' +String+ '">[ SEMBUNYIKAN BRACKET ]</a></b><br/>'); -->
+
+<!-- }else{ -->
+<!-- document.write('<b><a href="' +URL+ '&bracket=on"> [ TAMPILKAN BRACKET ] </a></b><br/>'); -->
+<!-- } -->
+
+document.write('<br/><h4>Lobby Match GENIEup Weekly Battle - Week ' + Week + ' - Round ' + Round + ' - MATCH ' + MatchNo + '</h4>');
+
+
+<!-- document.write('<b>Match Bracket : <a href="/genieuporganizer-v2/weekly-bracket-week-' + Week + '/" target="_blank">https://mobagenie.my.id/genieuporganizer-v2/weekly-bracket-week-' + Week + '/</a></b><br/>'); -->
+
+document.write('<br/><b>MATCH INFO :</b><br/><br/>');
+
+document.write('<b>Match ID : GMWBW' + Week + 'R' + Round + 'M' + MatchNo + '</b><br/>');
+document.write('<b>Week : #' + Week + '</b><br/>');
+document.write('<b>Match Round : ' + Round + '</b><br/>');
+document.write('<b>Match No : #' + MatchNo + '</b><br/>'); 
+document.write('<b>VERSUS : ' + Versus + '</b><br/>'); 
+document.write('<b>Match Date : ' + MatchDate + '</b><br/>');
+document.write('<b>Match Time : ' + Time + '</b><br/>');
+document.write('<b>Report Score /Pelanggaran : <a href="https://api.whatsapp.com/send/?phone=62895416625200&text=FORM Report GENIEup Weekly Battle - Week ' + Week + ' - Round ' + Round + ' - MATCH ' + MatchNo + ' : " target="_blank">[ REPORT ]</a></b><br/>');
+
+//alert(cid);
+
+
+
+$(document).ready(function(){
+
+   $.ajax({
+            url: "https://timezone.abstractapi.com/v1/current_time/?api_key=1b6585fe8ab14d9cbdf245ec877f9d15&location=Jakarta,%20Indonesia",
+            type: 'GET',
+            dataType: 'json',
+            success: function(json) {
+               
+			   
+				var abstractapi = (json.datetime); //"2021-06-22 13:05:09"; JSON.stringify()
+
+				var arr1 = abstractapi.split('-');
+				var arr2 = abstractapi.split(' ');
+				
+				var years = arr1[0];
+				var month = arr1[1];
+				var daysunfix = arr1[2]; //
+				var days = daysunfix.substring(0, 2);//get first 5 chars
+				var time = arr2[1];
+				
+				<!-- console.log('date: ', arr1[0]); -->
+				<!-- console.log('month: ', arr2[0]); -->
+				<!-- console.log('year: ', arr2[1]); -->
+
+var dtapi =  '' + month + '/' + days + '/' + years + ' ' + time + '';
+var dateapi =  '' + month + '/' + days + '/' + years + '';
+var timeapi =  '' + time + '';
+
+document.getElementById("ServerDate").innerHTML = " " +dateapi+ " ";
+document.getElementById("ServerTime").innerHTML = " " +timeapi+ " ";
+
+// Set the date we're counting down to
+var countDownDate = new Date(CD).getTime(); //new Date("06/26/2021 19:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  <!-- var now = new Date().getTime(); -->
+  var now = new Date(dtapi).getTime();
+   <!-- alert(now); -->
+   
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("demo").innerHTML = "" + days + "days " + hours + "hours "
+  + minutes + "minutes " + seconds + "seconds ";
+
+  // If the count down is finished, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "This match has been started!";
+  }
+}, 1000);
+
+				
+<!-- var dateapi =  '06/30/2021'; -->
+<!-- var timeapi =  '22:00:00'; -->
+
+  if (Round == "1") {
+	var SetTime = "19:";    
+  };
+  if (Round == "2") {
+	var SetTime = "20:";    
+  };
+  if (Round == "3") {
+	var SetTime = "21:";    
+  };
+  if (Round == "4") {
+	var SetTime = "22:";    
+  };
+  if (Round == "5") {
+	var SetTime = "23:";    
+  };  
+  
+  // If the count down is finished, write some text 
+  if (dateapi == "07/03/2021") {
+  
+
+		  if (timeapi.includes(''+ SetTime +'') ) {
+			<!-- alert("The word 19: is in the string."); -->
+			
+	<!-- document.getElementById("disqus_thread_warning").innerHTML = "Comment open when tournament started!!"; -->
+	<!-- document.getElementById('disqus_thread').style.display = 'show'; -->
+	document.getElementById('disqus_thread_warning').style.display = 'none';
+	
+		} else {
+			<!-- alert("The word Example is not in the string."); -->
+			document.getElementById("disqus_thread_warning").innerHTML = 'Lobby Chat for this Match open at ' + MatchDate + ', ' + SetTime + '00:00!!';
+			document.getElementById('disqus_thread').style.display = 'none';
+		}
+  
+
+  }else{
+  
+  document.getElementById("disqus_thread_warning").innerHTML = 'Lobby Chat for this Match open at ' + MatchDate + ', ' + SetTime + '00:00!!';
+  	document.getElementById('disqus_thread').style.display = 'none';
+  
+  };					
+				<!-- $('#result').html(now) -->
+
+            }
+        });
+
+})
+
+
+
+
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+
+    var disqus_config = function () {
+    <!-- this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable -->
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://genieuporganizer.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+	
+	
+// NOTE: Not testet of correct working!
+<!-- $(document).ready(function() { -->
+  <!-- var rightNow = new Date(); -->
+  <!-- var day = rightNow.getUTCDay(); -->
+  <!-- var hour = rightNow.getHours(); -->
+ <!-- var minutes = rightNow.getMinutes(); -->
+  <!-- alert(dtapi); -->
+  // show div only on day and time, Monday to Friday; hide div on weekend
+  // Sunday = 0, Monday = 1, and so on ..., Saturday = 6
+
+  /* if (
+    (day === 1 || day === 2 || day === 3 || day === 4 || day === 5) &&
+    hour > 9 && hour < 16
+  ) { */
+
+  <!-- if (hour == 16 && minutes <= 35) { -->
+    <!-- $("#time-based-content").show(); -->
+  <!-- } else { -->
+    <!-- $("#time-based-content").hide(); -->
+  <!-- } -->
+<!-- }); // -->
+	
+	
+</script>
+
+
+<!-- <div id="time-based-content"> -->
+  <!-- <h1>Day & Time based content<h1> -->
+      <!-- <p>Div is only displayed Monday through Friday at a specific time. Hidden over the weekend.</p> -->
+<!-- </div> -->
+
+<!-- Display the countdown timer in an element -->
+<span style="color: red;">
+<b>Server Date :</b> <b id="ServerDate"></b>
+<br/>
+<b>Server Time :</b> <b id="ServerTime"></b>
+<br/>
+<b>Match started in :</b> <b id="demo"></b></span>
+
+<!-- <span style="color: red;"><b><div id="countdown"></div></b> -->
+<!-- <div id="newcountdown"></div></span> -->
+
+<!-- <div id="time-based-content"> -->
+<br/><br/>
+<b>
+<div id="disqus_thread_warning"></div>
+</b>
+
+</div> <!--  math info end -->
+
+<div id="disqus_thread"></div>
+<!-- </div> -->
+
+
+<script>
+
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+<br>
+
+<script id="dsq-count-scr" src="//genieuporganizer.disqus.com/count.js" async></script>
+<script type="text/javascript" src="/bracket/site/jquery.bracket.min.js" crossorigin="anonymous"></script>
+<script src="https://ytrendcheck.gitlab.io/js/stupidtable.min.js"></script>

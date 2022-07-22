@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Genieuporganizers on MobaGenie</title><link>https://mobagenie.my.id/genieuporganizer/</link><description>Recent content in Genieuporganizers on MobaGenie</description><generator>Hugo -- gohugo.io</generator><lastBuildDate>Sat, 30 Jan 2021 13:23:09 +0700</lastBuildDate><atom:link href="https://mobagenie.my.id/genieuporganizer/feed.xml" rel="self" type="application/rss+xml"/><item><title>Contact Whatsapp - Weekly Scrim</title><link>https://mobagenie.my.id/genieuporganizer/whatsapp/</link><pubDate>Sat, 30 Jan 2021 13:23:09 +0700</pubDate><guid>https://mobagenie.my.id/genieuporganizer/whatsapp/</guid><description>
+window.location.href = "https://api.whatsapp.com/send/?phone=62895416625200"
+Page Redirection
+If you are not redirected automatically, follow this link to https://api.whatsapp.com/send/?phone=62895416625200.</description></item><item><title>FAQ - Weekly Scrim</title><link>https://mobagenie.my.id/genieuporganizer/weekly-faq/</link><pubDate>Sat, 30 Jan 2021 13:23:09 +0700</pubDate><guid>https://mobagenie.my.id/genieuporganizer/weekly-faq/</guid><description>Pertanyaan dan jawaban yang sering ditanyakan (FAQ) :
+Q1 : Gimana cara cek status Team, menunggu (Pending) atau sudah Registered (Terdaftar) ?
+A1 : klik Participant :
+Filter dengan Registered untuk cek list team yang sudah masuk Rerdaftar :
+Filter dengan Pendings untuk list yang masih menunggu :
+Q2 : kenapa team saya masih saja di daftar tunggu (Pending(?</description></item><item><title>GENIEup BATTLE PASS - Weekly Scrim</title><link>https://mobagenie.my.id/genieuporganizer/weekly-battle-pass/</link><pubDate>Sat, 30 Jan 2021 13:23:09 +0700</pubDate><guid>https://mobagenie.my.id/genieuporganizer/weekly-battle-pass/</guid><description>Petunjuk cara mendapatkan GENIEup Battle Pass Week #3
+1. Klik link https://rekonise.com/genieup-battle-pass-week-4-r4o9a
+2. Klik tombol "Follow on Instagram" nanti otomatis masuk ke IG @genieuporganizer
+3. Follow IG (jika sudah cukup balik ke browser lagi dan tombol "unlock link" sudah aktif berubsh jadi warna hijau
+4. Klik tombol "unlock link" nanti akan dibawa ke halaman kode "Battle Pass Week #4
+5. Copy code nya dan paste kan di Form registrasi Google Form.</description></item><item><title>GENIEup MLBB Weekly Battle - Lobby Match Chat</title><link>https://mobagenie.my.id/genieuporganizer/genieup-mlbb-weekly-battle-lobby-match-chat/</link><pubDate>Sat, 30 Jan 2021 13:23:09 +0700</pubDate><guid>https://mobagenie.my.id/genieuporganizer/genieup-mlbb-weekly-battle-lobby-match-chat/</guid><description>--
+--
+--
+--
+--
+').appendTo(demo) --
+').appendTo(demo) --
+¶')) --
+--
+--
+$.fn.GetParamURL = function(name){
+var results = new RegExp('[\?&amp;]' + name + '=([^&amp;#]*)').exec(window.location.href);
+if (results==null) {
+return null;
+}
+return decodeURI(results[1]) || 0;
+}
+var Week = $().GetParamURL('Week');
+var Round = $().GetParamURL('Round');
+var MatchNo = $().GetParamURL('MatchNo');
+var Versus = $().GetParamURL('Versus');
+var MatchDate = $().GetParamURL('MatchDate');
+var Time = $().GetParamURL('Time');
+var BattlefyEmbed = $().GetParamURL('BattlefyEmbed');
+var CD = $().</description></item><item><title>GENIEup MLBB WEEKLY BATTLE - Tournament List</title><link>https://mobagenie.my.id/genieuporganizer/genieup-mlbb-weekly-battle-tournament-list/</link><pubDate>Sat, 30 Jan 2021 13:23:09 +0700</pubDate><guid>https://mobagenie.my.id/genieuporganizer/genieup-mlbb-weekly-battle-tournament-list/</guid><description>Selamat datang di halaman Info list Tournament GENIEup WEEKLY BATTLE. silahkan klik BRACKET sesuai dengan Scrim yang sedang diikuti.
+--
+4. WEEK #4 [ Upcoming Scrim ] June 26, 2021 - 7:00 pm +07 (19.00 WIB)
+3. WEEK #3 [ Finished Scrim ] June 19, 2021 - 7:00 pm +07 (19.00 WIB)
+2. WEEK #2 [ Finished Scrim ] 6 February, 2021 - 7:00 pm +07 (19.</description></item><item><title>GENIEup MLBB WEEKLY BATTLE - WEEK #1 - BRACKET - Weekly Scrim</title><link>https://mobagenie.my.id/genieuporganizer/genieup-mlbb-weekly-battle-week-1/</link><pubDate>Sat, 30 Jan 2021 13:23:09 +0700</pubDate><guid>https://mobagenie.my.id/genieuporganizer/genieup-mlbb-weekly-battle-week-1/</guid><description>Berpindah ke MLBB : Adventure Redeem Code | Update Code : Tue, Feb 04, 2021
+--
+# #ROUND
+#Match No
+Time Lobby Match / Chat
+Report Score /Pelanggaran
+#ROUND 1MATCH #17:00 pm +07[ ENTER ][ REPORT ]
+#ROUND 1MATCH #27:00 pm +07[ ENTER ][ REPORT ]
+#ROUND 1MATCH #37:00 pm +07[ ENTER ][ REPORT ]
+#ROUND 1MATCH #47:00 pm +07[ ENTER ][ REPORT ]
+#ROUND 1MATCH #57:00 pm +07[ ENTER ][ REPORT ]
+#ROUND 1MATCH #67:00 pm +07[ ENTER ][ REPORT ]
+#ROUND 1MATCH #77:00 pm +07[ ENTER ][ REPORT ]
+#ROUND 1MATCH #87:00 pm +07[ ENTER ][ REPORT ]
+#ROUND 2MATCH #98:00 pm +07[ ENTER ][ REPORT ]
+#ROUND 2MATCH #108:00 pm +07[ ENTER ][ REPORT ]
+#ROUND 2MATCH #118:00 pm +07[ ENTER ][ REPORT ]
+#ROUND 2MATCH #128:00 pm +07[ ENTER ][ REPORT ]
+#ROUND 3MATCH #139:00 pm +07[ ENTER ][ REPORT ]
+#ROUND 3MATCH #149:00 pm +07[ ENTER ][ REPORT ]
+#ROUND 4MATCH #1510:00 pm +07[ ENTER ][ REPORT ]
+#ROUND 4MATCH #1610:00 pm +07[ ENTER ][ REPORT ]
+/**
+* RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.</description></item><item><title>GENIEup MLBB WEEKLY BATTLE - WEEK #2 - BRACKET - Weekly Scrim</title><link>https://mobagenie.my.id/genieuporganizer/genieup-mlbb-weekly-battle-week-2/</link><pubDate>Sat, 30 Jan 2021 13:23:09 +0700</pubDate><guid>https://mobagenie.my.id/genieuporganizer/genieup-mlbb-weekly-battle-week-2/</guid><description>Berpindah ke MLBB : Adventure Redeem Code | Update Code : Tue, Feb 04, 2021
+--
+# #ROUND
+#Match No
+Time Lobby Match / Chat
+Report Score /Pelanggaran
+#ROUND 1MATCH #17:00 pm +07[ ENTER ][ REPORT ]
+#ROUND 1MATCH #27:00 pm +07[ ENTER ][ REPORT ]
+#ROUND 1MATCH #37:00 pm +07[ ENTER ][ REPORT ]
+#ROUND 1MATCH #47:00 pm +07[ ENTER ][ REPORT ]
+#ROUND 1MATCH #57:00 pm +07[ ENTER ][ REPORT ]
+#ROUND 1MATCH #67:00 pm +07[ ENTER ][ REPORT ]
+#ROUND 1MATCH #77:00 pm +07[ ENTER ][ REPORT ]
+#ROUND 1MATCH #87:00 pm +07[ ENTER ][ REPORT ]
+#ROUND 2MATCH #98:00 pm +07[ ENTER ][ REPORT ]
+#ROUND 2MATCH #108:00 pm +07[ ENTER ][ REPORT ]
+#ROUND 2MATCH #118:00 pm +07[ ENTER ][ REPORT ]
+#ROUND 2MATCH #128:00 pm +07[ ENTER ][ REPORT ]
+#ROUND 3MATCH #139:00 pm +07[ ENTER ][ REPORT ]
+#ROUND 3MATCH #149:00 pm +07[ ENTER ][ REPORT ]
+#ROUND 4MATCH #1510:00 pm +07[ ENTER ][ REPORT ]
+#ROUND 4MATCH #1610:00 pm +07[ ENTER ][ REPORT ]
+/**
+* RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.</description></item><item><title>GENIEup MLBB WEEKLY BATTLE - WEEK #3 - BRACKET - Weekly Scrim</title><link>https://mobagenie.my.id/genieuporganizer/genieup-mlbb-weekly-battle-week-3/</link><pubDate>Sat, 30 Jan 2021 13:23:09 +0700</pubDate><guid>https://mobagenie.my.id/genieuporganizer/genieup-mlbb-weekly-battle-week-3/</guid><description>Berpindah ke MLBB : Adventure Redeem Code | Update Code : Tue, Feb 04, 2021
+--
+# #ROUND
+#Match No
+Time Lobby Match / Chat
+Report Score /Pelanggaran
+#ROUND 1MATCH #17:00 pm +07[ ENTER ][ REPORT ]
+#ROUND 1MATCH #27:00 pm +07[ ENTER ][ REPORT ]
+#ROUND 1MATCH #37:00 pm +07[ ENTER ][ REPORT ]
+#ROUND 1MATCH #47:00 pm +07[ ENTER ][ REPORT ]
+#ROUND 1MATCH #57:00 pm +07[ ENTER ][ REPORT ]
+#ROUND 1MATCH #67:00 pm +07[ ENTER ][ REPORT ]
+#ROUND 1MATCH #77:00 pm +07[ ENTER ][ REPORT ]
+#ROUND 1MATCH #87:00 pm +07[ ENTER ][ REPORT ]
+#ROUND 2MATCH #98:00 pm +07[ ENTER ][ REPORT ]
+#ROUND 2MATCH #108:00 pm +07[ ENTER ][ REPORT ]
+#ROUND 2MATCH #118:00 pm +07[ ENTER ][ REPORT ]
+#ROUND 2MATCH #128:00 pm +07[ ENTER ][ REPORT ]
+#ROUND 3MATCH #139:00 pm +07[ ENTER ][ REPORT ]
+#ROUND 3MATCH #149:00 pm +07[ ENTER ][ REPORT ]
+#ROUND 4MATCH #1510:00 pm +07[ ENTER ][ REPORT ]
+#ROUND 4MATCH #1610:00 pm +07[ ENTER ][ REPORT ]
+/**
+* RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.</description></item><item><title>GENIEup MLBB WEEKLY BATTLE - WEEK #5</title><link>https://mobagenie.my.id/genieuporganizer/genieup-mlbb-weekly-battle-week-5/</link><pubDate>Sat, 30 Jan 2021 13:23:09 +0700</pubDate><guid>https://mobagenie.my.id/genieuporganizer/genieup-mlbb-weekly-battle-week-5/</guid><description>--
+--
+--
+.matchMargin{width: 90px;}
+body {
+font-family: "Open Sans", sans-serif;
+line-height: 1.25;
+}
+table {
+border: 1px solid #ccc;
+border-collapse: collapse;
+margin: 0;
+padding: 0;
+width: 100%;
+table-layout: fixed;
+}
+table caption {
+font-size: 1.5em;
+margin: .5em 0 .75em;
+}
+table tr {
+background-color: #f8f8f8;
+border: 1px solid #ddd;
+padding: .35em;
+}
+table th,
+table td {
+padding: .625em;
+text-align: center;
+}
+table th {
+font-size: .85em;
+letter-spacing: .</description></item><item><title>GENIEup Organizer - Comment Policy</title><link>https://mobagenie.my.id/genieuporganizer/comment-policy/</link><pubDate>Sat, 30 Jan 2021 13:23:09 +0700</pubDate><guid>https://mobagenie.my.id/genieuporganizer/comment-policy/</guid><description>Hey there friend, welcome to GENIEup Organizer.
+Before you add your contribution in the comment section of our living room home on the web, please take a moment to look over the helpful guidelines below.
+How to comment on GENIEup Organizer
+We welcome thoughtful and civilized discussion. The GENIEup Organizer editorial team reserves the right to edit or delete comments as we see fit, without explanation.
+Here’s what your comment should look like:
+1.</description></item><item><title>GENIEup Organizer - Contact</title><link>https://mobagenie.my.id/genieuporganizer/contact/</link><pubDate>Sat, 30 Jan 2021 13:23:09 +0700</pubDate><guid>https://mobagenie.my.id/genieuporganizer/contact/</guid><description>
+Contact GENIEup Organizer
+If you want more info etc feel free to contact us via.
+1. Whatsapp PC
+2. Instagram DM</description></item><item><title>GENIEup Organizer Admin Dashboard</title><link>https://mobagenie.my.id/genieuporganizer/dashboard/</link><pubDate>Sat, 30 Jan 2021 13:23:09 +0700</pubDate><guid>https://mobagenie.my.id/genieuporganizer/dashboard/</guid><description>jQuery Bracket
+--
+--
+$(function() {
+var demos = ['save', 'minimal', 'resize', 'matches', 'customHandlers', 'autoComplete', 'doubleElimination', 'noSecondaryFinal', 'noConsolationRound', 'noGrandFinalComeback', 'reverseBracket', 'big', 'connectorStyles']
+$.each(demos, function(i, d){
+var demo = $('div#'+d)
+$('').appendTo(demo)
+').appendTo(demo) --
+¶')) --
+})
+})
+#protected {display:none;}
+This Proctected page requires JavaScript to verify your identity. Please enable JavaScript to access the Page!</description></item><item><title>GENIEup WEEKLY BATTLE - WEEK #4</title><link>https://mobagenie.my.id/genieuporganizer/genieup-mlbb-weekly-battle-week-4/</link><pubDate>Sat, 30 Jan 2021 13:23:09 +0700</pubDate><guid>https://mobagenie.my.id/genieuporganizer/genieup-mlbb-weekly-battle-week-4/</guid><description>--
+$.fn.GetParamURL = function(name){
+var results = new RegExp('[\?&amp;]' + name + '=([^&amp;#]*)').exec(window.location.href);
+if (results==null) {
+return null;
+}
+return decodeURI(results[1]) || 0;
+}
+var bracket = $().GetParamURL('bracket');
+var team = $().GetParamURL('team');
+if (bracket == 'on') {
+document.write('');
+document.write('[ HIDE BRACKET ] ');
+}else{
+document.write('[ SHOW BRACKET ] ');
+}
+/*
+if (team == 'on') {
+document.write('');
+document.write('[ HIDE TEAM ] ');
+}else{
+document.write('[ SHOW TEAM ]');
+}
+*/
+$(document).</description></item><item><title>Group Whatsapp - Weekly Scrim</title><link>https://mobagenie.my.id/genieuporganizer/group-whatsapp/</link><pubDate>Sat, 30 Jan 2021 13:23:09 +0700</pubDate><guid>https://mobagenie.my.id/genieuporganizer/group-whatsapp/</guid><description>
+window.location.href = "https://chat.whatsapp.com/HjmIGlE5mAS9zIJ4aT6hkK"
+Page Redirection
+If you are not redirected automatically, follow this link to https://chat.whatsapp.com/HjmIGlE5mAS9zIJ4aT6hkK.</description></item><item><title>Jadwal - Weekly Scrim</title><link>https://mobagenie.my.id/genieuporganizer/weekly-schedule/</link><pubDate>Sat, 30 Jan 2021 13:23:09 +0700</pubDate><guid>https://mobagenie.my.id/genieuporganizer/weekly-schedule/</guid><description>- TEHCHNICAL MEETING dilakukan sore hari jam 15.00 WIB sampai jam 18.00 WIB sebelum malam dimulainya SCRIM
+- Jam 19.00 WIB Pertandingan Group 1 BO 1
+- Jam 20.00 WIB Pertandingan Group 2 BO 1
+- Jam 21.00 WIB Pertandingan Group 3 (semi Final) BO 1
+- Jam 22.00 WIB Pertandingan Group 4 (Final + Bronze Match) BO 3
+sering sekali ada team yang mengeluh kok sudah mulai padahal baru jam bla bla.</description></item><item><title>Panduan - Weekly Scrim (Update : 19 Juni, 2021)</title><link>https://mobagenie.my.id/genieuporganizer/weekly-guide/</link><pubDate>Sat, 30 Jan 2021 13:23:09 +0700</pubDate><guid>https://mobagenie.my.id/genieuporganizer/weekly-guide/</guid><description>1. MEMBUAT AKUN DAN TEAM DI BATYLE FY :
+Buat yang baru pertama daftar tour di Battle Ly (jika sudah pernah, skip dan lanjut ke Keterangan saja)
+1.A. Leader daftar akun dulu melalui link di bawah ini :
+https://battlefy.com/account/signup
+1.B. Kalo udah daftar, login Ke akun kamu lewat link di bawah ini :
+https://battlefy.com/account/login
+1.C. Kalo udah log in, buat team kamu melalui link di bawah ini :
+https://battlefy.</description></item><item><title>Peraturan - GENIEup MLBB Weekly Battle (Update : 26 Juni, 2021 )</title><link>https://mobagenie.my.id/genieuporganizer/genieup-mlbb-weekly-battle-rules/</link><pubDate>Sat, 30 Jan 2021 13:23:09 +0700</pubDate><guid>https://mobagenie.my.id/genieuporganizer/genieup-mlbb-weekly-battle-rules/</guid><description>PERUBAHAN PERATURAN MAJOR DIKARENAKAN MENYESUAIKAN DENGAN PERPINDAHAN PLATFORM DARI BATTLEFY KE SELF PLATFORM GENIEup Organizer (Update : 26 Juni, 2021) :
+WARNING :&amp;nbsp; nick team yang terdaftar di Battle Ly harus sesuai dengan nick atau minimal mirip dengan nick di ML. apabila terdapat nick ML yg berbeda dari list di Battle Ly tanpa sepengetahuan Penyelenggara sebelum Scrim, maka team tersebut bisa terkena diskualifikasi dari Scrim.
+SPECTA/REFERE TIDAK DIPERBOLEHKAN DENGAN ALASAN APAPUN, KECUALI AKUN OFFICIAL LIVE STREAMER GENIEUP UNTUK LIVE STREAMING.</description></item><item><title>PERATURAN CHAT LOBBY MATCH - (Update : 25 Juni, 2021)</title><link>https://mobagenie.my.id/genieuporganizer/mlbb-weekly-battle-lobby-match-chat-rules/</link><pubDate>Sat, 30 Jan 2021 13:23:09 +0700</pubDate><guid>https://mobagenie.my.id/genieuporganizer/mlbb-weekly-battle-lobby-match-chat-rules/</guid><description>PERATURAN CHAT LOBBY MATCH - (Update : 25 Juni, 2021) :
+perhatikan panah kuning di bracket, itu adalah Nomor Round pertandingan yaitu Round 1 dan 2. sedang panah hijau adalah Nomor Match kalian atau Nomor pertandingan yang diawali tanda pagar #1 #9.
+nah, jikalau mau masuk Lobby Match / Chat lawan team, maka kalian tinggal klik [ENTER] atau [report] Lobby Match di bawah bracket sesuai dengan Nomor Group dan Nomor Match Pertandingan team kalian seperti yang ditandai panah biru.</description></item><item><title>PRIZE - Weekly Scrim</title><link>https://mobagenie.my.id/genieuporganizer/weekly-prize/</link><pubDate>Sat, 30 Jan 2021 13:23:09 +0700</pubDate><guid>https://mobagenie.my.id/genieuporganizer/weekly-prize/</guid><description>Prize Pool for 1st Winner only :
+Sertifikat digital juara 1.
+sample sertifikat
+semua yang juara 1 weekly SCRIM akan otomatis jadi peserta MLB ALL STAR SCRIM dimana mempertemukan 10 team juara 1 weekly. Namun tidak wajib ikut hanya bagi team yang mau ikut saja.
+Untuk All star serrifikat akan didapatkan juara 1,2 dan 3.
+oh iya, untuk All star sertifikat ada 6.</description></item></channel></rss>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>Flip Text Testing</title>
+        <link rel="stylesheet" href="jquery.bFlipText.css">
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+        <script type="text/javascript" src="jquery.bFlipText.js"></script>
+    </head>
+    <body>
+        <div id="my_flip1"></div>
+        <div class="my_flip_multi"></div>
+        <div id="my_flip3" class="my_flip_multi"></div>
+        <input type="text" value="write here" id="mytext">
+        <input type="button" value="Change 1st Text" id="myflip_submit1"/>
+        <input type="button" value="Change 3rd Text" id="myflip_submit3"/>
+        <script type="text/javascript">
+            //initializing script by id with style
+            var my_style = {'width': '30px', 'font-size': '28px', 'background': '#f00', 'color': '#fff'};
+            $('#my_flip1').bFlipText({text: 'MY start test', css: my_style});
+            //initializing script by class with no style & with initial text
+            $('.my_flip_multi').bFlipText({text: 'MY 2nd/3rd test'});
+            //on click change the written text in 1st div
+            $('#myflip_submit1').click(function () {
+                $('#my_flip1').bFlipTextPlay($('#mytext').val());
+            });
+            //on click change the written text in 3rd div
+            $('#myflip_submit3').click(function () {
+                $('#my_flip3').bFlipTextPlay($('#mytext').val());
+            });
+        </script>
+    </body>
+</html>

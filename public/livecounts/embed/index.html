@@ -1,0 +1,53 @@
+<html>
+<head>
+	<title>Realtime Live YouTube Subscriber Count Embed</title>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	<meta name="fragment" content="!" />
+	<meta name="viewport" content="width=300px, initial-scale=1.0">
+	<link rel="shortcut icon" type="image/png" href="http://livecounts.mobagenie.id/assets/images/icon.png" />
+	<script type="text/javascript">
+		var isEmbed = 1;
+	</script>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,600" rel="stylesheet">
+	<link href="http://livecounts.mobagenie.id/assets/css/style-embed.css" rel="stylesheet">
+	<link href="http://livecounts.mobagenie.id/assets/plugins/odometer/odometer-theme.css" rel="stylesheet">
+</head>
+
+<body>
+	<div id="embed">
+		<div class="embedImage">
+			<img src="http://livecounts.mobagenie.id/assets/images/icon.png" alt="" height="80px" width="80px" id="yt_profile" />
+		</div>
+		<div class="embedContainer">
+			<div class="embedName emSec">
+				<span class="yt_name">Moba Genie</span>
+			</div>
+			<div class="embedCounter emSec">
+				<h2 class="count_live" id="yt_subs">00,000,000</h2>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		document.body.onclick = function () {
+			window.open(YT.urls.getCurrent());
+		}
+	</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.0/jquery.min.js" integrity="sha256-JAW99MJVpJBGcbzEuXk4Az05s/XyDdBomFqNlM3ic+I="
+        crossorigin="anonymous"></script>
+    <script src="http://localhost:1313/livecounts/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="http://localhost:1313/livecounts/assets/js/waves.js"></script>
+    <script src="http://localhost:1313/livecounts/assets/plugins/odometer/odometer.min.js"></script>
+    <script src="http://localhost:1313/livecounts/assets/plugins/sticky-kit-master/dist/sticky-kit.min.js"></script>
+    <!-- <script src="http://localhost:1313/livecounts/assets/js/custom-ui.js"></script> -->
+    <script src="http://localhost:1313/livecounts/assets/js/base.js"></script>
+    <script src="http://localhost:1313/livecounts/assets/js/keyManager.js"></script>
+    <script src="http://localhost:1313/livecounts/assets/js/updateManager.vs.js"></script>
+    <script src="http://localhost:1313/livecounts/assets/js/query.vs.js"></script>
+    <script src="http://localhost:1313/livecounts/assets/js/multisearch.vs.js"></script>
+    <script src="http://localhost:1313/livecounts/assets/js/live.vs.js"></script>
+    <script src="http://localhost:1313/livecounts/assets/js/sharing.vs.js"></script>
+    <script src="http://localhost:1313/livecounts/assets/js/urlManager.vs.js"></script>
+    <script src="//mobagenie.disqus.com/embed.js"></script>
+    <script src="http://localhost:1313/livecounts/assets/js/init.js"></script>
+</body>
+</html>

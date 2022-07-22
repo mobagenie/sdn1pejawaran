@@ -1,0 +1,77 @@
+media_folder = "static/netlify/assets"
+public_folder = "../../"
+display_url = "https://admin-mobagenie.netlify.app/"
+
+[backend]
+name = "gitlab"
+repo = "mobagenie/mobagenie.my.id"
+branch = "master"
+
+[[collections]]
+name = "post"
+label = "Post"
+folder = "content/post"
+create = true
+slug = "{{slug}}"
+show_preview_links = true
+
+  [[collections.fields]]
+  label = "Title"
+  name = "title"
+  widget = "string"
+
+  [[collections.fields]]
+  label = "post_highlight"
+  name = "post_highlight"
+  widget = "string"
+
+  [[collections.fields]]
+  label = "author"
+  name = "author"
+  widget = "string"
+  required = false
+
+  [[collections.fields]]
+  label = "date"
+  name = "date"
+  widget = "datetime"
+  required = false
+
+  [[collections.fields]]
+  label = "PublishDate"
+  name = "PublishDate"
+  widget = "datetime"
+  required = true
+
+  [[collections.fields]]
+  label = "Lastmod"
+  name = "Lastmod"
+  widget = "datetime"
+  required = false
+
+  [[collections.fields]]
+  label = "slug"
+  name = "slug"
+  widget = "list"
+
+  [[collections.fields]]
+  label = "categories"
+  name = "categories"
+  widget = "string"
+
+  [[collections.fields]]
+  label = "tags"
+  name = "tags"
+  widget = "string"
+
+  [[collections.fields]]
+  label = "images"
+  name = "images"
+  widget = "image"
+  required = false
+
+  [[collections.fields]]
+  label = "Body"
+  name = "body"
+  widget = "markdown"
+  required = true

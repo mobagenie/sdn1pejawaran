@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      {{ partial "head-page.html" . }}
+        {{ partial "head-add-on-page.html" . }}	
+		
+<div id="main">
+
+<!-- post wrapper start -->
+<div id="post-wrapper">
+<div class="post-container">
+
+ <!--  {{ partial "featured-post.html" . }} -->
+
+<div class="latest-post-title">
+<h2>Latest</h2>
+</div>
+
+<div class="main section" id="main"><div class="widget Blog" data-version="1" id="Blog1">
+<div class="blog-posts">
+<!--Can't find substitution for tag [defaultAdStart]-->
+          
+          <div class="date-outer">
+        
+
+          <div class="date-posts">
+  
+            {{ range .Data.Pages }}
+          <!-- {{ $paginator := .Paginate (where .Site.Pages "Type" "post") 10 }}-->
+  
+<div class="post-outer">
+<article class="post">
+<div class="label-line">
+<span class="label-info-th">
+
+  {{ range .Params.categories }}
+	
+<a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}/" rel="tag">{{ . }}</a>	
+	
+    {{ end }} 
+
+
+</span>
+</div>
+<div class="img-thumbnail">
+<a href="{{ .RelPermalink }}">
+
+{{ with .Params.images }}
+		{{ range first 1 . }}
+	<img alt="thumbnail" src="https://res.cloudinary.com/drlhixyyd/image/fetch/w_50,h_50,c_fill,g_face,f_auto/{{ . | absURL }}" />
+		{{ end }}
+	{{ end }}
+
+{{if isset .Params "images" }}
+
+<!-- img alt="{{ .Title }}" src="https://res.cloudinary.com/drlhixyyd/image/fetch/w_250,h_250,c_fill,g_face,f_auto/{{ index .Params "images" 0 }}" title="{{ .Title }}"-->
+
+{{ end }}
+
+</a>
+</div>
+
+{{if isset .Params "images" }}
+<meta content="{{ index .Params "images" 0 }}" itemprop="image">
+{{ end }}
+
+<a name="3458932010900769286"></a>
+<h2 class="post-title entry-title" itemprop="name headline">
+<a href="{{ .RelPermalink }}">{{ .Title }}</a>
+</h2>
+
+
+
+{{ if gt (len .Summary) 200 }}
+
+  {{slicestr .Summary 0 150}}
+  
+  <a href="{{ .Permalink }}">Read More…</a> 
+
+    {{ else }}
+        {{ .Summary }}
+
+{{ end }}
+
+
+<!-- {{ range first 10 .Pages }} -->
+    <!-- <article> -->
+      <!-- this <div> includes the title summary -->
+      <!-- <div> -->
+        <!-- <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2> -->
+        <!-- {{ .Summary }} -->
+      <!-- </div> -->
+      <!-- {{ if .Truncated }} -->
+      <!-- This <div> includes a read more link, but only if the summary is truncated... -->
+      <!-- <div> -->
+        <!-- <a href="{{ .RelPermalink }}">Read More…</a> -->
+      <!-- </div> -->
+      <!-- {{ end }} -->
+    <!-- </article> -->
+<!-- {{ end }} -->
+
+</div>
+</div>
+<div class="post-info info-1">
+</div>
+<div style="clear: both;"></div>
+</article>
+</div>
+            {{ end }}
+        </div></div>
+      
+<!--Can't find substitution for tag [adEnd]-->
+</div>
+
+</div>
+
+</div>
+
+
+<div class="iklan-atas section" id="iklan-atas"><div class="widget HTML" data-version="1" id="HTML996">
+</div></div>
+<div class="iklan-tengah1 section" id="iklan-tengah1"><div class="widget HTML" data-version="1" id="HTML997">
+</div></div>
+<div class="iklan-tengah2 section" id="iklan-tengah2"><div class="widget HTML" data-version="1" id="HTML998">
+</div></div>
+<div class="iklan-bawah section" id="iklan-bawah"><div class="widget HTML" data-version="1" id="HTML999">
+</div></div>
+</div>
+</div>
+<!-- post wrapper end -->
+
+    </body>
+</html>

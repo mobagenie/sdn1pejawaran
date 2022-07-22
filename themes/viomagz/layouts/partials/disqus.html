@@ -1,0 +1,91 @@
+<script type="text/javascript">
+
+	
+<!-- $("#disqus_trigger").on("click", function(){ -->
+  <!-- $("#disqus_show").toggle();                 // .fadeToggle() // .slideToggle() -->
+<!-- });			 -->
+
+<!-- }); -->
+
+
+
+</script>
+
+
+<script type="text/javascript">
+
+function load_disqus( disqus_shortname ) {
+
+    (function () {
+	
+        // Don't ever inject Disqus on localhost--it creates unwanted
+        // discussions from 'localhost:1313' on your Disqus account...
+        if (window.location.hostname == "localhost")
+            return;
+
+		// Prepare the trigger and target
+		var disqus_trigger = document.getElementById('disqus_trigger'),
+		disqus_target  = document.getElementById('disqus_thread'),
+		disqus_embed   = document.createElement('script'),
+		disqus_hook    = (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]);
+			
+		  // Load script asynchronously only when the trigger and target exist
+		  if( disqus_target && disqus_trigger ) {
+			disqus_embed.type = 'text/javascript';
+			disqus_embed.async = true;
+			disqus_embed.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+			disqus_hook.appendChild(disqus_embed);
+			disqus_trigger.remove();
+			console.log('Disqus loaded.');
+		  }
+  
+    })();  
+}
+
+</script>
+
+<div id="disqus_thread">
+
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript"></a></noscript>
+
+  <button id="disqus_trigger" onclick="load_disqus('mobagenie')">Post / Read Comment</button>
+</div>
+
+<!-- <style> -->
+
+
+<!-- </style> -->
+
+<!-- <button id="#disqus_trigger">Show Comment</button> -->
+
+<!-- <input class="submit-email" id="#disqus_trigger" type="submit" value="Show Comment"> -->
+
+<!-- <button id="disqus_trigger">TOGGLE</button> -->
+<!-- <div id="disqus_show">Some content...</div> -->
+
+<!-- <div id="disqusshow"> -->
+
+<!-- <div id="disqus_thread"></div> -->
+
+<!-- <script type="text/javascript"> -->
+
+    <!-- (function () { -->
+        <!-- // Don't ever inject Disqus on localhost--it creates unwanted -->
+        <!-- // discussions from 'localhost:1313' on your Disqus account... -->
+        <!-- if (window.location.hostname == "localhost") -->
+            <!-- return; -->
+
+        <!-- var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true; -->
+        <!-- // var disqus_shortname = '{{ .Site.DisqusShortname }}'; -->
+		<!-- var disqus_shortname = 'mobagenie'; -->
+        <!-- dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js'; -->
+        <!-- (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq); -->
+    <!-- })(); -->
+
+<!-- </script> -->
+
+
+<!-- <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript> -->
+<!-- <a href="https://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a> -->
+
+<!-- </div> -->

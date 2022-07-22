@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Aldous on MobaGenie</title><link>https://mobagenie.my.id/tags/aldous/</link><description>Recent content in Aldous on MobaGenie</description><generator>Hugo -- gohugo.io</generator><lastBuildDate>Wed, 30 Sep 2020 16:43:55 +0000</lastBuildDate><atom:link href="https://mobagenie.my.id/tags/aldous/feed.xml" rel="self" type="application/rss+xml"/><item><title>3 Hero Mobile Legends Ini Mempunyai Kekuatan Seperti Di Anime</title><link>https://mobagenie.my.id/3-hero-mobile-legends-ini-mempunyai-kekuatan-seper/</link><pubDate>Wed, 30 Sep 2020 16:43:55 +0000</pubDate><guid>https://mobagenie.my.id/3-hero-mobile-legends-ini-mempunyai-kekuatan-seper/</guid><description>MLBB Logo via Official
+MobaGenie, - Selain banyak memuat karakter-karakter imut, lucu dan kocak, Film Anime juga banyak yang memuat karakter dengan kekuatan magic yang sangat dahsyat yang yang bisa dengan mudah mengalahkan lawan-lawannya. Begitu pula dengan Game Mobile Legends yang diisi banyak hero yang mempunyai kekuatan super masing-masing. Dan disadari atau tidak, ternyata ada beberapa Hero-hero di Mobile Legends yang mempunyai kekuatan sama persis dengan Karakter di Film Anime loh.</description></item><item><title>Daftar Total Prize Tournament Esports Terbaru (Global / Semua Genre)</title><link>https://mobagenie.my.id/esports-chart/daftar-total-prize-tournament-esports-terbaru-global-semua-genre/</link><pubDate>Fri, 04 Oct 2019 22:30:24 +0700</pubDate><guid>https://mobagenie.my.id/esports-chart/daftar-total-prize-tournament-esports-terbaru-global-semua-genre/</guid><description>​ .tablesorter-scroller-bar-spacer {
+background: #eee;
+}
+.tablesorter-scroller-fixed:after {
+content: '';
+border-right: 1px solid #444;
+width: 1px;
+position: absolute;
+top: 0;
+bottom: 0;
+z-index: 2;
+right: 0;
+margin: 10px 0 15px;
+}
+.using-jui-theme .tablesorter-scroller-fixed:after {
+right: 0;
+}
+.using-green-theme .tablesorter-scroller-fixed:after,
+.using-black-ice-theme .tablesorter-scroller-fixed:after,
+.using-dark-theme .tablesorter-scroller-fixed:after,
+.using-dropbox-theme .tablesorter-scroller-fixed:after {
+margin: 0;
+}
+#fixed-columns-table tbody td {
+white-space: nowrap;
+min-width: 60px;
+.tablesorter thead .disabled {display: none}
+}
+$(function() {
+$('.tablesorter').tablesorter({
+theme: 'metro-dark',
+showProcessing: false,
+headers: { 0: { filter: false} },
+headerTemplate : '{content} {icon}',
+widgets: [ 'uitheme', 'zebra', 'sort2Hash','filter', 'scroller' ,'numbering' ],
+widgetOptions : {
+scroller_height : 600,
+scroller_upAfterSort: true,
+scroller_jumpToHeader: true,
+scroller_barWidth : null
+}
+});
+var startFixedColumns = 0;
+$('#fixed-columns-table').</description></item></channel></rss>

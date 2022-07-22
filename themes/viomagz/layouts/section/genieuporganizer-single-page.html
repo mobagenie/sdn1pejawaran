@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {{ partial "head.html" . }}
+        <!-- {{ partial "head-add-on-page.html" . }}			 -->
+		
+<style> 
+body {
+  <!-- background-image: url("https://mobagenie.my.id/img/selena-stun-low.jpg"); -->
+  <!-- background-color: #cccccc; -->
+}
+#wrapper {
+    background: #2a2e2eed;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 70px 30px 30px;
+    overflow: hidden;
+}
+span {
+color: #f8f8f8;
+}
+
+h2.post-title a, h1.post-title a, h2.post-title, h1.post-title {
+    color: #f8f8f8;
+}
+</style>
+		
+    </head>
+    <body>
+
+        <!-- {{ partial "nav.html" . }} -->
+        {{ partial "header-genieuporganizer.html" . }}
+		
+        {{ partial "pageinfo-genieuporganizer.html" . }}		
+		
+        {{ partial "footer-genieuporganizer.html" . }}
+        {{ partial "js-init.html" . }}
+    </body>
+</html>

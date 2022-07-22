@@ -1,0 +1,19 @@
+
+{{ $type := .Get "type" }}
+
+{{ if eq $type "mlbb" }}
+
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img alt="{{ .Get "caption" }}" border="0" data-original-height="800" data-original-width="1200" height="426" src="https://mobagenie.my.id/img/banner/{{ .Get "imagelink" }}.jpg" title="" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;"><span style="font-size: x-small;"><i>{{ .Get "caption" }}</i></span></td></tr>
+</tbody></table>
+	
+{{ else if eq $type "regular" }}
+
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img alt="{{ .Get "caption" }}" border="0" data-original-height="800" data-original-width="1200" height="426" src="{{ .Get "imagelink" }}" title="" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;"><span style="font-size: x-small;"><i>{{ .Get "caption" }}</i></span></td></tr>
+</tbody></table>
+
+{{ end }}
+	

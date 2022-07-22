@@ -1,0 +1,7 @@
+[
+ {
+ 
+ "_id":"1","week":"5","round":"1","datentime":"26/06/2021","teamid":"1","team":"Team 1","score":"1","status":"winner","logo":"jpg",
+ "_id":"2","week":"5","round":"1","datentime":"26/06/2021","teamid":"2","team":"Team 2","score":"0","status":"loser","logo":"jpg" 
+ }
+]

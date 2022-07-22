@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>restdb.io mlbbredeemcode</title>
+
+
+  <script src="https://ytrendcheck.gitlab.io/js/jquery.js"></script>
+
+</head>
+<body>
+
+<script>
+
+  // alert('vid')
+ 
+var mode = ""; 
+  
+// RECENT 
+$.fn.getrecentjs = function recentjs() {
+	
+ if (mode == "dev") {
+			
+ var recentapiurl = (apiTestBaseURL + '/json/data/dev-test/external/restdb/recenttest.json');
+//alert(recentapiurl);
+ }else{
+
+// https://ytrendcheck-7507.restdb.io/rest/recent?max=5&sort=name&dir=-1
+
+var recentapiurl = ("https://ytrendcheck-7507.restdb.io/rest/recent?max=10&sort=_created&dir=-1");
+
+}
+
+//alert(recentapiurl)
+
+var settings = {
+  "async": true,
+  "crossDomain": true,
+  "url": recentapiurl,
+  "method": "GET",
+  "headers": {
+    "content-type": "application/json",
+    "x-apikey": "5fab74a58639597288385256",
+    "cache-control": "no-cache"
+  }
+}
+
+$.ajax(settings).done(function (response) {
+  //console.log(response);
+ // var json = JSON.stringify(response[0]);
+ // var json = response[0].vid;
+//    alert(json);
+
+  //alert(json)
+   var items = [];
+   
+  response.forEach(function(i){
+   alert(i.vid)
+  
+  if (mode == "dev") {
+	
+items.push('<div class="thumb"><a href="c/?v=' + i.vid +'&ref=recent"><img src="default.jpg" alt="Thumbnail" width="100" height="50" /></a></div>');
+
+}else{
+	
+items.push('<div id="thumb"><a href="c/?v=' + i.vid +'&ref=recent"><img src="https://i.ytimg.com/vi/' + i.vid + '/default.jpg" alt="Thumbnail" width="100" height="50" /></a></div>');
+
+}
+  
+  items.push('<b><a href="c/?v=' + i.vid +'&ref=recent">' + i.vtit + '</a></b><br/>');
+//  items.push("<b>Video ID :</b> " + i.vid + "<br/>");
+});
+
+$("<div/>", {
+		 "class": "recent-con",
+		html: items.join("")  // dont add ; 
+	}).appendTo("#recent");
+
+});
+
+} // recent end
+
+$().getrecentjs();
+
+</script>
+
+<div class="recent-con" id="recent"></div>
+
+<!-- <table idv="tabel" class="tablesorter" id="fixed-columns-table"><b>Berpindah ke <b><a href="/page/mlbb-adventure-redeem-code">MLBB : Adventure</a></b> Redeem Code | Update Code : Tue, Feb 04, 2021</b><br><thead> -->
+    <!-- <tr> -->
+<!-- <th class="filter-false">#No</th> -->
+<!-- <th class="filter-false">Date</th>    	 -->
+<!-- <th class="filter-false">Code</th> -->
+<!-- <th class="filter-false">Status</th> -->
+<!-- <th class="filter-false">Report</th> -->
+<!-- <th class="filter-false">Reward</th> -->
+    <!-- </tr> -->
+  <!-- </thead> -->
+  <!-- <tbody> -->
+
+<!-- <tr><td>1</td><td>02/02/2021</td><td>0kill0deathwin</td><td>Active</td><td><b><a href="/page/mlbb-redeem-code-report/?CodeNo=1&RedeemCode=0kill0deathwin">Report</a></b></td><td>Hero Trial</td></tr> -->
+
+<!-- <tr><td>2</td><td>02/02/2021</td><td>supporthero20kills</td><td>Active</td><td><b><a href="/page/mlbb-redeem-code-report/?CodeNo=2&RedeemCode=supporthero20kills">Report</a></b></td><td>Unknown</td></tr></tr> -->
+
+<!-- </tbody> -->
+<!-- </table>  -->
+
+  </body>
+</html>

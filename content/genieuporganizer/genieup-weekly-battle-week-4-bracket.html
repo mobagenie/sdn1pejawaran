@@ -1,0 +1,419 @@
+---
+title: "GENIEup WEEKLY BATTLE - WEEK #4"
+post_highlight: "pppp"
+author: MobaGenie
+date: 2021-01-30T13:23:09+07:00
+PublishDate: 2021-01-30T13:23:09+07:00
+Lastmod: 2021-01-30T13:23:09+07:00
+slug: genieup-mlbb-weekly-battle-week-4
+Breadcrumb: [WEEKLY BATTLE]
+tags: []
+images: ['http://mobagenie.my.id/img/info-logo.jpg']
+draft: false
+layout: "genieuporganizer-single-page"
+type: section
+---
+
+<div class="separator" style="clear: both; text-align: center;"><a href="https://lh3.googleusercontent.com/-G9tKkvgEEVc/YNb4CW_qAAI/AAAAAAAAB2o/1fJS84HOpc4mJy0IJbO2ZaQ-98zwEZw2QCLcBGAsYHQ/s1080/IMG_ORG_1624700903338.jpeg" imageanchor="1"><img border="0" src="https://lh3.googleusercontent.com/-G9tKkvgEEVc/YNb4CW_qAAI/AAAAAAAAB2o/1fJS84HOpc4mJy0IJbO2ZaQ-98zwEZw2QCLcBGAsYHQ/s1080/IMG_ORG_1624700903338.jpeg" alt="" width="1080" height="642" data-original-width="1080" data-original-height="642"></a></div><br>
+	
+<!-- <iframe src="https://battlefy.com/embeds/60ce195f21762b468d3da6f1/stage/60cef24362b8ae2a2cade705" title="Battlefy Tournament - W4, SE" width="100%" height="500" scrolling="yes" frameborder="0"></iframe> -->
+
+<script>
+	$.fn.GetParamURL = function(name){
+    var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
+    if (results==null) {
+       return null;
+    }
+    return decodeURI(results[1]) || 0;
+}
+
+var bracket  = $().GetParamURL('bracket');
+var team  = $().GetParamURL('team');
+
+if (bracket == 'on') {
+document.write('<iframe src="https://battlefy.com/embeds/60ce195f21762b468d3da6f1/stage/60cef24362b8ae2a2cade705" title="Battlefy Tournament - W4, SE" width="100%" height="500" scrolling="yes" frameborder="0"></iframe>');
+
+document.write('<br/><b><a href="/genieuporganizer/genieup-mlbb-weekly-battle-week-4/"> [ HIDE BRACKET ] </a></b>');
+
+}else{
+document.write('<b><a href="/genieuporganizer/genieup-mlbb-weekly-battle-week-4/?bracket=on"> [ SHOW BRACKET ] </a></b>');
+}
+
+/*
+if (team == 'on') {
+document.write('');
+
+document.write('<br/><br/><b><a href="/genieuporganizer/genieup-mlbb-weekly-battle-week-4/"> [ HIDE TEAM ] </a></b>');
+
+}else{
+document.write('<br/><br/><b><a href="/genieuporganizer/genieup-mlbb-weekly-battle-week-4/?team=on">[ SHOW TEAM ]</a></b>');
+}
+
+*/
+
+
+
+
+$(document).ready(function(){
+
+   $.ajax({
+            url: "https://timezone.abstractapi.com/v1/current_time/?api_key=1b6585fe8ab14d9cbdf245ec877f9d15&location=Jakarta,%20Indonesia",
+            type: 'GET',
+            dataType: 'json',
+            success: function(json) {
+               
+			   
+				var abstractapi = (json.datetime); //"2021-06-22 13:05:09"; JSON.stringify()
+
+				var arr1 = abstractapi.split('-');
+				var arr2 = abstractapi.split(' ');
+				
+				var years = arr1[0];
+				var month = arr1[1];
+				var daysunfix = arr1[2]; //
+				var days = daysunfix.substring(0, 2);//get first 5 chars
+				var time = arr2[1];
+				
+				<!-- console.log('date: ', arr1[0]); -->
+				<!-- console.log('month: ', arr2[0]); -->
+				<!-- console.log('year: ', arr2[1]); -->
+
+var dtapi =  '' + month + '/' + days + '/' + years + ' ' + time + '';
+var dateapi =  '' + month + '/' + days + '/' + years + '';
+var timeapi =  '' + time + '';
+
+document.getElementById("ServerDate").innerHTML = " " +dateapi+ " ";
+document.getElementById("ServerTime").innerHTML = " " +timeapi+ " ";
+
+// Set the date we're counting down to
+var countDownDate = new Date("06/26/2021 19:00").getTime(); //new Date("06/26/2021 19:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  <!-- var now = new Date().getTime(); -->
+  var now = new Date(dtapi).getTime();
+   <!-- alert(now); -->
+   
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("demo").innerHTML = "" + days + "days " + hours + "hours "
+  + minutes + "minutes " + seconds + "seconds ";
+
+  // If the count down is finished, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "This Tournament has been started!";
+  }
+}, 1000);
+				
+				
+				<!-- $('#result').html(now) -->
+
+            }
+        });
+
+})
+
+/*
+    CountDownTimer('06-26-2021 13:05:09', 'countdown');
+	<!-- CountDownTimer('06/22/2021 01:06 AM', 'countdown'); -->
+    <!-- CountDownTimer('06/26/2021 07:00 PM', 'newcountdown'); -->
+
+    function CountDownTimer(dtapi,dt, id)
+    {
+        var end = new Date(dt);
+
+        var _second = 1000;
+        var _minute = _second * 60;
+        var _hour = _minute * 60;
+        var _day = _hour * 24;
+        var timer;
+
+        function showRemaining() {
+            <!-- var now = new Date(); -->
+			var now = new Date(dtapi);
+            var distance = end - now;
+            if (distance < 0) {
+
+                clearInterval(timer);
+                document.getElementById(id).innerHTML = 'Tournament Started in : Tournament/Scrim has been Started!';
+
+                return;
+            }
+            var days = Math.floor(distance / _day);
+            var hours = Math.floor((distance % _day) / _hour);
+            var minutes = Math.floor((distance % _hour) / _minute);
+            var seconds = Math.floor((distance % _minute) / _second);
+
+            document.getElementById(id).innerHTML = 'Tournament Started in : ' + days + ' days ';
+            document.getElementById(id).innerHTML += hours + ' hours ';
+            document.getElementById(id).innerHTML += minutes + ' minutes ';
+            document.getElementById(id).innerHTML += seconds + ' seconds';
+        }
+
+        timer = setInterval(showRemaining, 1000);
+    }
+	
+	*/
+
+$(document).ready(function(){
+	$("#team").hide();
+	$("#hide").hide();
+	
+  $("#show").click(function(){
+    $("#team").show();
+    $("#show").hide();
+  
+  $("#hide").show();
+  
+    $("#hide").click(function(){
+    $("#team").hide();
+    $("#show").show();
+    $("#hide").hide();
+
+  });
+  
+  
+  });
+  
+
+  
+});
+	
+</script>
+
+<a href="#" id="show"><br/><br/><b>[ SHOW TEAM] </b></a>
+<a href="#" id="hide"><br/><br/><b>[ HIDE TEAM] </b></a>
+
+<div id="team">
+
+<br/>HRTL ESPORT
+<br/>
+<br/>- H O U T A R O U
+<br/>- Kyytzyy
+<br/>- Zandra.A.R
+<br/>- Alif huwaidi TP5
+<br/>- ばくごう
+<br/>- Xenzz
+<br/>- Sentinel
+<br/>- Anjingnya
+<br/>- 
+<br/>
+<br/>Venomous v1
+<br/>
+<br/>- Gumball
+<br/>- Bagakxx
+<br/>- Jhon
+<br/>- Ceniz cherie
+<br/>- God help me
+<br/>- Hydr@
+<br/>- Legend evos
+<br/>- Voduenski
+<br/>- Mr komek
+<br/>
+<br/>NROS ESPORTS
+<br/>
+<br/>- Lexona.
+<br/>- ⒹⒺⓂⓄⓃⒼ
+<br/>- NEF_Marcopolo
+<br/>- Ilalang Putra Hara
+<br/>- pensiunan jablay
+<br/>- P O V
+<br/>- ρσєтιяєу
+<br/>- 
+<br/>- 
+<br/>
+<br/>Devils kinds
+<br/>
+<br/>- Saynsss.
+<br/>- L e X y
+<br/>- Ultramilk
+<br/>- Matcha
+<br/>- Ecualyptus
+<br/>- † Mann
+<br/>- Kaina
+<br/>- 
+<br/>- 
+<br/>
+<br/>XI RPL 2
+<br/>
+<br/>- Rizz Losing Someone.
+<br/>- Hipokrit.
+<br/>- Shal.
+<br/>- Akuma Yurei
+<br/>- RikCal_RC
+<br/>- 
+<br/>- 
+<br/>- 
+<br/>- 
+<br/>
+<br/>Team Rusher MY
+<br/>
+<br/>- Rush||GegeTzy
+<br/>- Rush||Zeus
+<br/>- Rush|||Oxlade
+<br/>- Rush||Nexus
+<br/>- Rush||ZelTzy
+<br/>- Rush||NiexTzy
+<br/>- 
+<br/>- 
+<br/>- 
+<br/>
+<br/>Moon
+<br/>
+<br/>- Power
+<br/>- Smookies
+<br/>- Midoriya
+<br/>- Sheepboyz
+<br/>- ROBIN HOOD
+<br/>- 
+<br/>- 
+<br/>- 
+<br/>- 
+<br/>
+
+</div>
+
+<br/> <br/>
+
+<!-- <div class="container"> -->
+<!-- <div id="result" style="color:red"></div> -->
+<!-- </div> -->
+
+<center>
+<b><a href="https://mobagenie.my.id/register">[ TOURNAMENT REGISTRATION ]</a></b>
+<br/>
+<b><a href="https://mobagenie.my.id/genieuporganizer/mlbb-weekly-battle-lobby-match-chat-rules">[ LOBBY CHAT RULES ]</a></b>
+<br/>
+<b><a href="https://mobagenie.my.id/genieuporganizer/genieup-mlbb-weekly-battle-rules">[ TOURNAMENT RULES ]</a></b>
+
+</center>
+
+
+
+<br/>
+
+<b>Tournament Date : 06/26/2021 7.00:00</b><br/>
+
+<!-- Display the countdown timer in an element -->
+<span style="color: red;">
+<b>Server Date :</b> <b id="ServerDate"></b>
+<br/>
+<b>Server Time :</b> <b id="ServerTime"></b>
+<br/>
+<b>Tournament started in :</b> <b id="demo"></b></span>
+
+<!-- <span style="color: red;"><b><div id="countdown"></div></b> -->
+<!-- <div id="newcountdown"></div-->
+<!-- </span> -->
+		
+<br/><br/><b>ROUND : 1</b><br/>
+<table idv="tabel" class="tablesorter" id="fixed-columns-table"><!-- <b>Berpindah ke <b><a href="/page/mlbb-adventure-redeem-code">MLBB : Adventure</a></b> Redeem Code | Update Code : Tue, Feb 04, 2021</b><br> --><thead>
+    <tr>
+<th class="filter-false">#</th>	
+<th class="filter-false">#ROUND</th>
+<th class="filter-false">#Match No</th>
+<th class="filter-false">Time</th>    	
+<th class="filter-false">Lobby Match / Chat</th>
+<th class="filter-false">Report Score /Pelanggaran</th>
+    </tr>
+  </thead>
+  <tbody>
+
+<tr><td>#</td><td>ROUND 1</td><td>MATCH #1</td><td>19:00:00</td><td><b><a href="/genieuporganizer/genieup-mlbb-weekly-battle-lobby-match-chat/?Week=4&Round=1&MatchNo=1&MatchDate=06/26/2021&Time=19:00:00&MID=GMWBW4R1M1&CD=06/26/2021 07:00 PM&BattlefyEmbed=https://battlefy.com/embeds/60ce195f21762b468d3da6f1/stage/60cef24362b8ae2a2cade705" target="_blank">[ ENTER ]</a></b></td><td><b><a href="https://api.whatsapp.com/send/?phone=62895416625200&text=FORM [ REPORT ] GENIEup Weekly Battle - Week 4 - ROUND 1 - MATCH 1 :" target="_blank">[ REPORT ]</a></b></td></tr>
+
+<tr><td>#</td><td>ROUND 1</td><td>MATCH #2</td><td>19:00:00</td><td><b><a href="/genieuporganizer/genieup-mlbb-weekly-battle-lobby-match-chat/?Week=4&Round=1&MatchNo=2&MatchDate=06/26/2021&Time=19:00:00&MID=GMWBW4R1M2&CD=06/26/2021 07:00 PM&BattlefyEmbed=https://battlefy.com/embeds/60ce195f21762b468d3da6f1/stage/60cef24362b8ae2a2cade705" target="_blank">[ ENTER ]</a></b></td><td><b><a href="https://api.whatsapp.com/send/?phone=62895416625200&text=FORM [ REPORT ] GENIEup Weekly Battle - Week 4 - ROUND 1 - MATCH 2 :" target="_blank">[ REPORT ]</a></b></td></tr>
+
+<tr><td>#</td><td>ROUND 1</td><td>MATCH #3</td><td>19:00:00</td><td><b><a href="/genieuporganizer/genieup-mlbb-weekly-battle-lobby-match-chat/?Week=4&Round=1&MatchNo=3&MatchDate=06/26/2021&Time=19:00:00&MID=GMWBW4R1M3&CD=06/26/2021 07:00 PM&BattlefyEmbed=https://battlefy.com/embeds/60ce195f21762b468d3da6f1/stage/60cef24362b8ae2a2cade705" target="_blank">[ ENTER ]</a></b></td><td><b><a href="https://api.whatsapp.com/send/?phone=62895416625200&text=FORM [ REPORT ] GENIEup Weekly Battle - Week 4 - ROUND 1 - MATCH 3 :" target="_blank">[ REPORT ]</a></b></td></tr>
+
+<tr><td>#</td><td>ROUND 1</td><td>MATCH #4</td><td>19:00:00</td><td><b><a href="/genieuporganizer/genieup-mlbb-weekly-battle-lobby-match-chat/?Week=4&Round=1&MatchNo=4&MatchDate=06/26/2021&Time=19:00:00&MID=GMWBW4R1M4&CD=06/26/2021 07:00 PM&BattlefyEmbed=https://battlefy.com/embeds/60ce195f21762b468d3da6f1/stage/60cef24362b8ae2a2cade705" target="_blank">[ ENTER ]</a></b></td><td><b><a href="https://api.whatsapp.com/send/?phone=62895416625200&text=FORM [ REPORT ] GENIEup Weekly Battle - Week 4 - ROUND 1 - MATCH 4 :" target="_blank">[ REPORT ]</a></b></td></tr>
+
+</tbody>
+</table> 
+
+<br/><b>ROUND : 2</b><br/>
+<table idv="tabel" class="tablesorter" id="fixed-columns-table"><!-- <b>Berpindah ke <b><a href="/page/mlbb-adventure-redeem-code">MLBB : Adventure</a></b> Redeem Code | Update Code : Tue, Feb 04, 2021</b><br> --><thead>
+    <tr>
+<th class="filter-false">#</th>	
+<th class="filter-false">#ROUND</th>
+<th class="filter-false">#Match No</th>
+<th class="filter-false">Time</th>    	
+<th class="filter-false">Lobby Match / Chat</th>
+<th class="filter-false">Report Score /Pelanggaran</th>
+    </tr>
+  </thead>
+  <tbody>
+
+<tr><td>#</td><td>ROUND 2</td><td>MATCH #5</td><td>20:00:00</td><td><b><a href="/genieuporganizer/genieup-mlbb-weekly-battle-lobby-match-chat/?Week=4&Round=2&MatchNo=5&MatchDate=06/26/2021&Time=20:00:00&MID=GMWBW4R2M5&CD=06/26/2021 08:00 PM&BattlefyEmbed=https://battlefy.com/embeds/60ce195f21762b468d3da6f1/stage/60cef24362b8ae2a2cade705" target="_blank">[ ENTER ]</a></b></td><td><b><a href="https://api.whatsapp.com/send/?phone=62895416625200&text=FORM [ REPORT ] GENIEup Weekly Battle - Week 4 - ROUND 2 - MATCH 5 :" target="_blank">[ REPORT ]</a></b></td></tr>
+
+<tr><td>#</td><td>ROUND 2</td><td>MATCH #6</td><td>20:00:00</td><td><b><a href="/genieuporganizer/genieup-mlbb-weekly-battle-lobby-match-chat/?Week=4&Round=2&MatchNo=6&MatchDate=06/26/2021&Time=20:00:00&MID=GMWBW4R2M6&CD=06/26/2021 08:00 PM&BattlefyEmbed=https://battlefy.com/embeds/60ce195f21762b468d3da6f1/stage/60cef24362b8ae2a2cade705" target="_blank">[ ENTER ]</a></b></td><td><b><a href="https://api.whatsapp.com/send/?phone=62895416625200&text=FORM [ REPORT ] GENIEup Weekly Battle - Week 4 - ROUND 2 - MATCH 6 :" target="_blank">[ REPORT ]</a></b></td></tr>
+
+
+
+</tbody>
+</table> 
+
+<br/><b>ROUND : 3</b><br/>
+<table idv="tabel" class="tablesorter" id="fixed-columns-table"><!-- <b>Berpindah ke <b><a href="/page/mlbb-adventure-redeem-code">MLBB : Adventure</a></b> Redeem Code | Update Code : Tue, Feb 04, 2021</b><br> --><thead>
+    <tr>
+<th class="filter-false">#</th>	
+<th class="filter-false">#ROUND</th>
+<th class="filter-false">#Match No</th>
+<th class="filter-false">Time</th>    	
+<th class="filter-false">Lobby Match / Chat</th>
+<th class="filter-false">Report Score /Pelanggaran</th>
+    </tr>
+  </thead>
+  <tbody>
+
+<tr><td>#</td><td>ROUND 3</td><td>MATCH #8</td><td>21:00:00</td><td><b><a href="/genieuporganizer/genieup-mlbb-weekly-battle-lobby-match-chat/?Week=4&Round=3&MatchNo=8&MatchDate=06/26/2021&Time=21:00:00&MID=GMWBW4R3M8&CD=06/26/2021 09:00 PM&BattlefyEmbed=https://battlefy.com/embeds/60ce195f21762b468d3da6f1/stage/60cef24362b8ae2a2cade705" target="_blank">[ ENTER ]</a></b></td><td><b><a href="https://api.whatsapp.com/send/?phone=62895416625200&text=FORM [ REPORT ] GENIEup Weekly Battle - Week 4 - ROUND 3 - MATCH 8 :" target="_blank">[ REPORT ]</a></b></td></tr>
+
+<tr><td>#</td><td>ROUND 3</td><td>MATCH #7</td><td>21:00:00</td><td><b><a href="/genieuporganizer/genieup-mlbb-weekly-battle-lobby-match-chat/?Week=4&Round=3&MatchNo=7&MatchDate=06/26/2021&Time=21:00:00&MID=GMWBW4R3M7&CD=06/26/2021 09:00 PM&BattlefyEmbed=https://battlefy.com/embeds/60ce195f21762b468d3da6f1/stage/60cef24362b8ae2a2cade705" target="_blank">[ ENTER ]</a></b></td><td><b><a href="https://api.whatsapp.com/send/?phone=62895416625200&text=FORM [ REPORT ] GENIEup Weekly Battle - Week 4 - ROUND 3 - MATCH 7 :" target="_blank">[ REPORT ]</a></b></td></tr>
+
+</tbody>
+</table> 
+
+<br/><br/> 
+
+
+
+
+<div id="disqus_thread"></div>
+<script>
+	
+	var PAGE_IDENTIFIER = "GMWBW4";
+	
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    
+    var disqus_config = function () {
+//  this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable 
+    
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://genieuporganizer.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+<script id="dsq-count-scr" src="//genieuporganizer.disqus.com/count.js" async></script>
+
+<!-- Sharing is caring, submit atau kirim kode Redem aktif kalian melalui form <a href="/page/mlbb-redeem-code-submit/">SUBMIT MLBB : Bang Bang REDEEM CODE!</a>.
+
+<c[ ENTER ]>Made with ❤️ by Genie</c[ ENTER ]> -->
